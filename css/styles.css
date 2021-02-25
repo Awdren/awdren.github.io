@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
 * Copyright 2013-2020 Start Bootstrap
@@ -10025,7 +10025,7 @@ h1 {
 }
 
 p.lead {
-  font-size: 1.15rem;
+  font-size: 0.8 rem;
   font-weight: 400;
 }
 
