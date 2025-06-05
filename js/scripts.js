@@ -3,7 +3,7 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
-    (function ($) {
+(function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
@@ -17,7 +17,8 @@
             target = target.length
                 ? target
                 : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
+            // Fix: Added check for target.offset() to ensure valid position
+            if (target.length && target.offset()) {
                 $("html, body").animate(
                     {
                         scrollTop: target.offset().top,
