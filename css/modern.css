@@ -1,0 +1,331 @@
+/*
+ * modern.css — Design system overlay for awdren.github.io
+ * Progressive enhancement over startbootstrap-resume (Bootstrap 4)
+ */
+
+/* ─────────────────────────────────────────────────────────────────────
+   1. Design Tokens
+   ───────────────────────────────────────────────────────────────────── */
+:root {
+  /* Palette */
+  --c-sidebar:       #0f172a;   /* slate-900  — sidebar background      */
+  --c-accent:        #6366f1;   /* indigo-500 — primary accent (light bg)*/
+  --c-accent-light:  #a5b4fc;   /* indigo-300 — accent on dark bg        */
+  --c-accent-dark:   #4338ca;   /* indigo-700 — hover state              */
+  --c-link:          #4f46e5;   /* indigo-600 — body text links          */
+  --c-text:          #1e293b;   /* slate-800  — body copy                */
+  --c-text-muted:    #64748b;   /* slate-500  — secondary text           */
+  --c-bg:            #ffffff;
+  --c-bg-alt:        #f8fafc;   /* slate-50   — alternate sections       */
+  --c-border:        #e2e8f0;   /* slate-200                             */
+
+  /* Awards */
+  --c-gold:   #d97706;
+  --c-silver: #94a3b8;
+  --c-bronze: #b45309;
+
+  /* Elevation */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / .05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / .08), 0 1px 2px -1px rgb(0 0 0 / .06);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / .08), 0 2px 4px -2px rgb(0 0 0 / .06);
+
+  /* Shape */
+  --radius:    8px;
+  --radius-sm: 4px;
+  --radius-pill: 999px;
+
+  /* Motion */
+  --ease: 0.18s ease;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   2. Base & Smooth Scroll
+   ───────────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--c-text);
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+a {
+  color: var(--c-link);
+  text-decoration: none;
+  transition: color var(--ease);
+}
+a:hover {
+  color: var(--c-accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   3. Sidebar Navigation
+   ───────────────────────────────────────────────────────────────────── */
+#sideNav.bg-primary {
+  background: var(--c-sidebar) !important;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+#sideNav .navbar-nav .nav-link {
+  color: #94a3b8 !important;            /* slate-400 */
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.45rem 1.5rem;
+  border-left: 3px solid transparent;
+  transition: color var(--ease), border-color var(--ease), padding-left var(--ease);
+}
+#sideNav .navbar-nav .nav-link:hover {
+  color: var(--c-accent-light) !important;
+  border-left-color: var(--c-accent-light);
+  padding-left: 2rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   4. Bootstrap color overrides
+   ───────────────────────────────────────────────────────────────────── */
+.text-primary { color: var(--c-accent)   !important; }
+.text-warning  { color: var(--c-gold)    !important; }
+.bg-primary    { background: var(--c-sidebar) !important; }
+
+/* ─────────────────────────────────────────────────────────────────────
+   5. Profile Photo
+   ───────────────────────────────────────────────────────────────────── */
+.img-profile {
+  border: 3px solid rgba(255,255,255,0.08) !important;
+  box-shadow: 0 0 0 3px var(--c-accent-light),
+              0 8px 24px rgba(0,0,0,0.35) !important;
+  transition: box-shadow var(--ease) !important;
+}
+.img-profile:hover {
+  box-shadow: 0 0 0 4px var(--c-accent-light),
+              0 12px 32px rgba(0,0,0,0.4) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   6. Social Icons
+   ───────────────────────────────────────────────────────────────────── */
+.social-icon {
+  background: rgba(255,255,255,0.08) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  transition: background var(--ease), transform var(--ease),
+              box-shadow var(--ease), border-color var(--ease) !important;
+}
+.social-icon:hover {
+  background: var(--c-accent) !important;
+  border-color: var(--c-accent) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 6px 16px rgba(99,102,241,0.4) !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   7. Section Layout
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Alternate sections get a soft background */
+#interviews,
+#education,
+#awards {
+  background: var(--c-bg-alt);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   8. Section Headings — accent underline
+   ───────────────────────────────────────────────────────────────────── */
+.resume-section h2 {
+  position: relative;
+  padding-bottom: 0.65rem;
+  color: var(--c-sidebar);
+}
+.resume-section h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 3px;
+  background: linear-gradient(90deg, var(--c-accent), var(--c-accent-light));
+  border-radius: 2px;
+}
+.resume-section h3 {
+  color: var(--c-sidebar);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   9. Subheadings (year markers, category labels)
+   ───────────────────────────────────────────────────────────────────── */
+.subheading {
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  color: var(--c-accent) !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   10. Publications — left-bar entry cards
+   ───────────────────────────────────────────────────────────────────── */
+#experience .flex-grow-1 > p {
+  padding: 0.55rem 0.9rem;
+  border-left: 3px solid var(--c-border);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.7;
+  transition: border-color var(--ease), background var(--ease);
+  background: transparent;
+}
+#experience .flex-grow-1 > p:hover {
+  border-left-color: var(--c-accent);
+  background: rgba(99,102,241,0.04);
+}
+#experience .flex-grow-1 > p em {
+  color: var(--c-text-muted);
+  font-style: italic;
+}
+#experience .flex-grow-1 > p strong {
+  font-weight: 800;
+  color: var(--c-sidebar);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   11. Academic Links — pill buttons
+   ───────────────────────────────────────────────────────────────────── */
+.academic-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+.academic-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.22rem 0.75rem;
+  border: 1.5px solid var(--c-border);
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-decoration: none !important;
+  color: var(--c-sidebar) !important;
+  background: var(--c-bg);
+  transition: all var(--ease);
+  box-shadow: var(--shadow-xs);
+}
+.academic-links a:hover {
+  background: var(--c-accent);
+  color: #fff !important;
+  border-color: var(--c-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99,102,241,0.3);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   12. Lead / About text
+   ───────────────────────────────────────────────────────────────────── */
+.lead {
+  color: #334155;    /* slate-700 */
+  line-height: 1.82;
+  font-size: 1rem;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   13. Awards List
+   ───────────────────────────────────────────────────────────────────── */
+#awards .fa-ul li {
+  padding: 0.45rem 0.6rem 0.45rem 0.2rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--ease);
+  margin-bottom: 0.15rem;
+  font-size: 0.93rem;
+}
+#awards .fa-ul li:hover {
+  background: rgba(99,102,241,0.06);
+}
+#awards .fa-li {
+  color: var(--c-gold);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   14. Students List
+   ───────────────────────────────────────────────────────────────────── */
+#skills .fa-ul li {
+  padding: 0.3rem 0 0.3rem 0.2rem;
+  font-size: 0.93rem;
+  border-radius: var(--radius-sm);
+  transition: background var(--ease);
+}
+#skills .fa-ul li:hover {
+  background: rgba(99,102,241,0.05);
+}
+#skills .fa-li .fa-check {
+  color: var(--c-accent);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   15. Research section
+   ───────────────────────────────────────────────────────────────────── */
+#education .flex-grow-1 > p {
+  font-size: 0.95rem;
+  color: #334155;
+  line-height: 1.78;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   16. HR dividers — lighter
+   ───────────────────────────────────────────────────────────────────── */
+hr.m-0 {
+  border-color: var(--c-border);
+  opacity: 0.8;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   17. Scrollbar — subtle
+   ───────────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar               { width: 5px; }
+::-webkit-scrollbar-track         { background: var(--c-bg-alt); }
+::-webkit-scrollbar-thumb         { background: var(--c-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover   { background: var(--c-accent); }
+
+/* ─────────────────────────────────────────────────────────────────────
+   18. Focus ring (accessibility)
+   ───────────────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   19. Mobile — compact navbar toggler area
+   ───────────────────────────────────────────────────────────────────── */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.2) !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(165, 180, 252, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* ─────────────────────────────────────────────────────────────────────
+   20. Responsive tweaks
+   ───────────────────────────────────────────────────────────────────── */
+@media (max-width: 991.98px) {
+  #sideNav .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+  }
+  #sideNav .navbar-nav .nav-link:hover {
+    padding-left: 1rem;
+    border-bottom-color: var(--c-accent-light);
+    border-left: none;
+  }
+}
