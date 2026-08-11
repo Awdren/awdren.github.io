@@ -1,43 +1,41 @@
-/*!
-    * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-    */
 (function ($) {
     "use strict"; // Start of use strict
 
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            // Fix: Added check for target.offset() to ensure valid position
-            if (target.length && target.offset()) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
-        }
-    });
-
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
+    // Closes responsive menu when a nav link is clicked
+    $(".navbar-nav .nav-link").click(function () {
         $(".navbar-collapse").collapse("hide");
     });
 
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
-        target: "#sideNav",
+        target: "#mainNav",
+        offset: 90,
     });
+
+    // Dark mode toggle
+    var root = document.documentElement;
+    var toggleBtn = document.getElementById("themeToggle");
+
+    function updateToggleIcon() {
+        if (!toggleBtn) return;
+        var icon = toggleBtn.querySelector("i");
+        var isDark = root.getAttribute("data-theme") === "dark";
+        icon.className = isDark ? "fas fa-sun" : "fas fa-moon";
+    }
+    updateToggleIcon();
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+            var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+            updateToggleIcon();
+        });
+    }
+
+    // Footer year
+    var footerYear = document.getElementById("footerYear");
+    if (footerYear) {
+        footerYear.textContent = new Date().getFullYear();
+    }
 })(jQuery); // End of use strict
