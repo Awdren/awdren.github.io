@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <script>(function(){var s=localStorage.getItem("theme");var t=s||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.setAttribute("data-theme",t);})();</script>
+        <meta name="theme-color" content="#0f172a" />
         <meta name="description" content="Awdren Fontão, PhD — Professor Adjunto e Coordenador do PPGCC, FACOM/UFMS. Pesquisador em DevRel, Ecossistemas de Software e Engenharia de Software para IA." />
         <meta name="author" content="Awdren de Lima Fontão" />
         <!-- Open Graph -->
@@ -28,38 +30,65 @@
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Awdren Fontão, PhD</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Awdren Fontão" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interviews">Media</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Research</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Students</a></li>
-                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Service</a></li>-->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">
+                    <img class="navbar-avatar" src="assets/img/profile.jpg" alt="Awdren Fontão" />
+                    <span class="navbar-brand-text">Awdren Fontão<span class="navbar-brand-suffix">, PhD</span></span>
+                </a>
+                <div class="navbar-right">
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#interviews">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Publications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Research</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Students</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <main>
             <!-- About-->
-            <section class="resume-section" id="about">
+            <section class="resume-section hero-section" id="about">
                 <div class="resume-section-content">
+                <div class="hero-grid">
+                    <div class="hero-photo">
+                        <img src="assets/img/profile.jpg" alt="Awdren Fontão" class="hero-photo-img" />
+                    </div>
+                    <div class="hero-text">
                     <h1 class="mb-0">
                         Awdren Fontão
                         <span class="text-primary">, PhD</span>
                     </h1>
-                    <div class="subheading mb-5">
+                    <div class="subheading mb-3">
                         Professor Adjunto e Coordenador do PPGCC &middot; FACOM/UFMS &middot;
                         <a href="mailto:awdren.fontao@ufms.br">awdren.fontao@ufms.br</a>
                     </div>
-                    <p class="lead mb-5">PhD and Master by the Graduate Program in Informatics at the Institute of Computing (ICOMP) at the Federal University of Amazonas (UFAM). Bachelor of Computer Science from UFAM. He worked as a Technical Specialist (PhD) at SIDIA Institute of Science and Technology in Deep Learning and Emotional Text-To-Speech projects, as well as collaboration in the area of ​​Verification, Validation and Software Testing. He has experience with developer communities, where he worked for six years in the DevRel area as a developer evangelist for Nokia and Microsoft, in Brazil and Latin America. In this field, he participated in the organization of hackathons, developer conferences and training, in addition to technical team leadership. He serves as reviewer of journals and technical committees of conference and workshop programs. It has already been awarded as one of the best master's theses in computing in Brazil by SBC, as well as in the area of ​​software quality by SBQS. He is interested, within the Software Engineering area, in research on Developer Relations (DevRel), Software Ecosystems, Mining Software Repositories, Software Engineering applied to Machine Learning and Experimental Software Engineering. Member of the UFMS Software and Database Engineering Group, the UFAM Software Experimentation and Testing Group (ExperTS) and the UNIRIO Complex Systems Engineering Laboratory (Lab Esc).</p>
+                    <div class="stat-grid">
+                        <a href="#experience" class="card card-hover stat-card">
+                            <span class="stat-number">90</span>
+                            <span class="stat-label">Publications</span>
+                        </a>
+                        <a href="#experience" class="card card-hover stat-card">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Journal Articles</span>
+                        </a>
+                        <a href="#skills" class="card card-hover stat-card">
+                            <span class="stat-number">41</span>
+                            <span class="stat-label">Students Mentored</span>
+                        </a>
+                        <a href="#awards" class="card card-hover stat-card">
+                            <span class="stat-number">37</span>
+                            <span class="stat-label">Awards &amp; Honors</span>
+                        </a>
+                    </div>
+                    <p class="lead mb-5">Professor Adjunto at the Faculdade de Computação (FACOM) and permanent member of the Graduate Program in Computer Science (PPGCC) at the Federal University of Mato Grosso do Sul (UFMS). PhD and Master by the Graduate Program in Informatics (PPGI) at the Federal University of Amazonas (UFAM), and Bachelor of Computer Science from UFAM. Awarded in 2020 as the best Software Engineering thesis and the best Information Systems thesis in Brazil, and previously recognized among the best Computer Science master's theses in Brazil by SBC. He has experience with developer communities, having worked for six years in Developer Relations (DevRel) as a developer evangelist for Nokia and Microsoft across Brazil and Latin America — organizing hackathons, developer conferences and training, in addition to leading technical teams. He serves as a reviewer for journals and technical program committees of conferences and workshops. Within Software Engineering, his research interests include Developer Relations (DevRel), Software Ecosystems, Mining Software Repositories, Software Engineering applied to Machine Learning, and Experimental Software Engineering. He coordinates the Software Engineering Lab at FACOM/UFMS and is a member of the Complex Systems Engineering Laboratory (Lab Esc) at UNIRIO.</p>
                     <div class="academic-links">
                         <a href="https://dblp.org/pers/f/Font=atilde=o:Awdren_de_Lima.html" target="_blank"><i class="fas fa-database fa-xs"></i> DBLP</a>
                         <a href="https://scholar.google.com.br/citations?user=BfesYF0AAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap fa-xs"></i> Google Scholar</a>
@@ -72,6 +101,8 @@
                         <a class="social-icon" href="https://www.twitter.com/awdren" target="_blank" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
                         <a class="social-icon" href="https://github.com/Awdren" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
+                    </div>
+                </div>
                 </div>
             </section>
             <!-- Media -->
@@ -82,32 +113,47 @@
                     <h3 class="mb-3">Interviews &middot; YouTube</h3>
                     <div class="row mb-4">
                         <div class="col-lg-6 mb-3">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qWjTgugi0Kw" title="Interview on YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card card-hover media-card">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qWjTgugi0Kw" title="Interview on YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1M0_PoA5MUo" title="Interview on YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card card-hover media-card">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1M0_PoA5MUo" title="Interview on YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mg_x2OiRHZA" title="Interview on YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="card card-hover media-card">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mg_x2OiRHZA" title="Interview on YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <h3 class="mb-3">Interviews &middot; Podcasts</h3>
-                    <div class="mb-3">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/19yhjri7rtmkaWqczZyyZK?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </div>
-                    <div class="mb-4">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0n27rjX05lASplDVYZxgb8?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <div class="row mb-4">
+                        <div class="col-lg-6 mb-3">
+                            <div class="card card-hover media-card">
+                                <iframe style="border-radius:8px;border:0;width:100%" title="Podcast episode 1" src="https://open.spotify.com/embed/episode/19yhjri7rtmkaWqczZyyZK?utm_source=generator" height="152" frameBorder="0" loading="lazy" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <div class="card card-hover media-card">
+                                <iframe style="border-radius:8px;border:0;width:100%" title="Podcast episode 2" src="https://open.spotify.com/embed/episode/0n27rjX05lASplDVYZxgb8?utm_source=generator" height="152" frameBorder="0" loading="lazy" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            </div>
+                        </div>
                     </div>
 
                     <h3 class="mb-3">Posts &middot; Dev.To</h3>
-                    <a href="https://dev.to/awdren/devrel-developer-relations-relacoes-com-desenvolvedores-ei2" target="_blank">(em Português) DevRel · Developer Relations · Relações com desenvolvedores</a>
+                    <div class="card card-hover media-card media-card-link">
+                        <i class="fab fa-dev fa-lg mr-3"></i>
+                        <a href="https://dev.to/awdren/devrel-developer-relations-relacoes-com-desenvolvedores-ei2" target="_blank">(em Português) DevRel &middot; Developer Relations &middot; Relações com desenvolvedores</a>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -119,99 +165,125 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Refereed Journal Papers</h3>
                             <div class="subheading mb-3">2026</div>
-                            <p>COSTA, L. A. M.; DIAS, E.; RIBEIRO, D.; FONTÃO, AWDREN; SANTOS, R. P.; SEREBRENIK, A. Supporting software engineering managers in talent retention: The Brazilian context. <em>Empirical Software Engineering</em>, v. 31, p. 44, 2026. [Qualis A2]</p>
+                            <p>VINICIUS, M.; VERGILIO, B. J.; SOBRINHO, RAFAEL R.; SILVA, J. A.; FONTÃO, AWDREN. Metamorphic Fairness Testing of Retrieval-Augmented Generation: Diagnosing Retriever Bias and Evaluating Graph-based Mitigation. <em>JOURNAL OF SOFTWARE ENGINEERING RESEARCH AND DEVELOPMENT</em>, v. 1, p. 179-208, 2026.</p>
+                            <p>COSTA, L. A. M.; DIAS, E.; RIBEIRO, D.; FONTÃO, AWDREN; SANTOS, R. P.; SEREBRENIK, A. Supporting software engineering managers in talent retention: The Brazilian context. <em>EMPIRICAL SOFTWARE ENGINEERING</em>, v. 2, p. 44, 2026.</p>
                             <div class="subheading mb-3">2025</div>
-                            <p>COSTA, L. A. M.; FONTÃO, A.; SANTOS, R. P.; SEREBRENIK, A. Applying Generative Artificial Intelligence for Vulnerability Fixing in a Proprietary Software Ecosystem. <em>Journal of Systems and Software</em>, v. 1, p. 112723, 2025. [Qualis A2]</p>
-                            <p>ARAUJO, M. H.; COSTA, C.; FONTÃO, A. Technical Debt of Software Projects Based on Merge Code Comments. <em>Journal of Software Engineering Research and Development</em>, v. 13, p. 19–32, 2025. [Qualis A4]</p>
+                            <p>ARAUJO, M. H.; COSTA, C.; FONTÃO, A. Technical Debt of Software Projects Based on Merge Code Comments. <em>JOURNAL OF SOFTWARE ENGINEERING RESEARCH AND DEVELOPMENT</em>, v. 2, p. 19-32, 2025.</p>
+                            <p>COSTA, L. A. M.; FONTÃO, A; SANTOS, R. P.; SEREBRENIK, A. Applying Generative Artificial Intelligence for Vulnerability Fixing in a Proprietary Software Ecosystem. <em>JOURNAL OF SYSTEMS AND SOFTWARE</em>, p. 112723, 2025.</p>
                             <div class="subheading mb-3">2024</div>
-                            <p>DE MACEDO, G. T.; FONTÃO, AWDREN; GADELHA, BRUNO. Building soft skills through a role-play based approach for requirements engineering remote education. <em>Journal of the Brazilian Computer Society</em>, v. 1, p. 1, 2024. [Qualis A3]</p>
+                            <p>DE MACEDO, GRETCHEN T.; FONTÃO, AWDREN LIMA; GADELHA, BRUNO. Building soft skills through a role-play based approach for requirements engineering remote education. <em>JOURNAL OF THE BRAZILIAN COMPUTER SOCIETY (ONLINE)</em>, p. 1, 2024.</p>
                             <div class="subheading mb-3">2023</div>
-                            <p>FONTÃO, AWDREN; CLEGER-TAMAYO, S.; WIESE, IGOR; PEREIRA DOS SANTOS, RODRIGO; CLAUDIO DIAS-NETO, ARILO. A Developer Relations (DevRel) model to govern developers in Software Ecosystems. <em>Journal of Software-Evolution and Process</em>, v. 35, p. 1, 2023. [Qualis A4]</p>
+                            <p>SANTOS, PRICILA  LIMA DOS; CAGNIN, MARIA ISTELA; SILVA BORGES, HUDSON; FONTÃO, AWDREN. Humap pocket library: um aplicativo de educação em saúde, leitura e acesso ao conhecimento. <em>Perspectivas Experimentais e Clínicas Inovações Biomédicas e Educação em Saúde (PECIBES) ISSN - 2594-9888</em>, v. 1, p. 78, 2023.</p>
+                            <p>FONTÃO, AWDREN; CLEGER-TAMAYO, SERGIO; WIESE, IGOR; PEREIRA DOS SANTOS, RODRIGO; CLAUDIO DIAS-NETO, ARILO. A Developer Relations (DevRel) model to govern developers in Software Ecosystems. <em>Journal of Software-Evolution and Process</em>, v. 5, p. 1, 2023.</p>
                             <div class="subheading mb-3">2021</div>
-                            <p>FONTÃO, AWDREN; CLEGER-TAMAYO, S. ; WIESE, IGOR ; SANTOS, R. P. ; Dias-Neto, Arilo . A Developer Relations (DevRel) model to govern developers in Software Ecosystems. Journal of Software-Evolution and Process, p. 1, 2021.</p>
-                            <p>COSTA, L. A. M. ; FONTÃO, AWDREN ; SANTOS, R. P. . Towards Proprietary Software Ecosystem Governance Strategies Based on Health Metrics. IEEE TRANSACTIONS ON ENGINEERING MANAGEMENT, v. 69, p. 1, 2021.</p>
+                            <p>COSTA, L. A. M.; FONTÃO, AWDREN; SANTOS, R. P. Towards Proprietary Software Ecosystem Governance Strategies Based on Health Metrics. <em>IEEE TRANSACTIONS ON ENGINEERING MANAGEMENT</em>, p. 1, 2021.</p>
                             <div class="subheading mb-3">2020</div>
-                            <p>FONTÃO, A. L. ; PAES, P. ; SANTOS, R. P. ; EKWOGE, OSWALD M. ; DIAS NETO, A. C. . Evaluating Processes to Certify Mobile Applications during Developer Relations Activities. IEEE Access, v. 8, p. 1-15.</p>
-                            <p>GOMES, J. ; VILLANES, I. K. ; ASCATE, S. ; FONTÃO, A ; ANDRADE, E. N. ; Dias-Neto, Arilo . SCUTMA: Selecting Components for Unit Testing in Mobile Applications. Journal of Computer Science, v. 1, p. 1, 2020.</p>
+                            <p>FONTAO, AWDREN; PAES, PEDRO; EKWOGE, OSWALD; DOS SANTOS, RODRIGO PEREIRA; DIAS-NETO, ARILO CLAUDIO. Evaluating Processes to Certify Mobile Applications during Developer Relations Activities. <em>IEEE Access</em>, p. 1, 2020.</p>
+                            <p>GOMES, J.; VILLANES, I. K.; ASCATE, S.; FONTÃO, A; ANDRADE, E. N.; Dias-Neto, Arilo. SCUTMA: Selecting Components for Unit Testing in Mobile Applications. <em>Journal of Computer Science</em>, p. 1, 2020.</p>
                             <div class="subheading mb-3">2019</div>
-                            <p>FONTÃO, A. L.; SANTOS, R. P. ; DIAS-NETO, ARILO CLAUDIO . Exploiting Repositories in Mobile Software Ecosystems from a Governance Perspective. INFORMATION SYSTEMS FRONTIERS, v. 2019, p. 143-161.</p>
+                            <p>FONTÃO, A. L.; SANTOS, R. P.; DIAS-NETO, ARILO CLAUDIO. Exploiting Repositories in Mobile Software Ecosystems from a Governance Perspective. <em>INFORMATION SYSTEMS FRONTIERS</em>, v. 21, p. 143-161, 2019.</p>
                             <div class="subheading mb-3">2018</div>
-                            <p>FONTÃO, AWDREN; ÁBIA, BRUNO ; WIESE, IGOR ; ESTÁCIO, BERNARDO ; QUINTA, MARCELO ; SANTOS, RODRIGO PEREIRA DOS ; DIAS-NETO, ARILO CLAUDIO . Supporting governance of mobile application developers from mining and analyzing technical questions in stack overflow. JOURNAL OF SOFTWARE ENGINEERING RESEARCH AND DEVELOPMENT, v. 6, p. 8.</p>
+                            <p>FONTÃO, AWDREN; ÁBIA, BRUNO; WIESE, IGOR; ESTÁCIO, BERNARDO; QUINTA, MARCELO; SANTOS, RODRIGO PEREIRA DOS; DIAS-NETO, ARILO CLAUDIO. Supporting governance of mobile application developers from mining and analyzing technical questions in stack overflow. <em>JOURNAL OF SOFTWARE ENGINEERING RESEARCH AND DEVELOPMENT</em>, v. 1, p. 8, 2018.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Refereed Conference/Workshop Papers</h3>
+                            <div class="subheading mb-3">2026</div>
+                            <p>MENEZES, D.; XAVIER, E.; JYOBOJI, R. T.; BORGES, H. S.; FONTAO, AWDREN. Branching Echoes: Exploring Branching Models as Sociotechnical Lenses for Community Smells. In: <em>Proceedings of the XIV Workshop on Software Visualization, Maintenance and Evolution (VEM)</em>, São Paulo, 2026.</p>
+                            <p>VINICIUS, M.; SOBRINHO, RAFAEL R.; VERGILIO, B. J.; SILVA, J. A.; FONTAO, AWDREN. CHF-RAG: Coupled Heat-Flow Retrieval-Augmented Generation for Legal Document Retrieval. In: <em>Proceedings of the 36th Brazilian Conference on Intelligent Systems (BRACIS 2026)</em>, Cuiabá, 2026.</p>
+                            <p>VERGILIO, B. J.; BERNARD, M.; FONTAO, AWDREN. Does Retrieval-Augmented Vulnerability Repair Generalize Beyond Snippets? A Study on TypeScript Web Applications. In: <em>Proceedings of the 40th Brazilian Symposium on Software Engineering (SBES 2026) - Research Track</em>, São Paulo, 2026.</p>
+                            <p>CAITANO, G. F. O.; CACCIATORE, A.; FONTAO, AWDREN. Fairness Risk Triage in Pull Requests Using an LLM-Based Reviewer: An Experiment on Prompting Strategies. In: <em>Proceedings of the First Workshop on Software Engineering for Agentic Systems (SE4AS)</em>, São Paulo, 2026.</p>
                             <div class="subheading mb-3">2025</div>
-                            <p>WASSOUF-JR, E.; FUKUDA, P.; FONTÃO, AWDREN. Investigating the Developer Experience of LGBTQIAPN+ People in Agile Teams. In: <em>IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS)</em>, Ottawa, 2025.</p>
-                            <p>WASSOUF, E. R.; PAIVA, D.; GAMA, K.; FONTÃO, AWDREN. The Developer Experience of LGBTQIA+ People in Agile Teams: A Multivocal Literature Review. In: <em>IEEE/ACM 18th International Conference on Cooperative and Human Aspects of Software Engineering (CHASE)</em>, Ottawa, 2025.</p>
-                            <p>OUTAO, J.; COSTA, L. A. M.; ZACARIAS, R.; FONTÃO, A.; CONSTANTINOU, E.; SANTOS, R. P.; SEREBRENIK, A. Proprietary Software Ecosystems: What We Already Know and Future Perspectives. In: <em>ACM/IEEE International Workshop on Software Engineering for Systems-of-Systems and Software Ecosystems (SESoS)</em>, Ottawa, 2025.</p>
-                            <p>COSTA, L. A.; FONTÃO, A. L.; CONSTANTINOU, E.; DOS SANTOS, R. P.; SEREBRENIK, A. Building the Landing Zone for Site Reliability Engineering: A Multivocal Literature Review. In: <em>39th Brazilian Symposium on Software Engineering (SBES 2025)</em>, Recife, 2025.</p>
-                            <p>AYACH, F.; LAMEIRÃO, V.; LEAO, R.; et al. Generating Proto-Personas through Prompt Engineering: A Case Study on Efficiency, Effectiveness, and Empathy. In: <em>SBES 2025</em>, Recife, 2025.</p>
-                            <p>BUENO, A. R. R. N.; CAFEO, B.; CAGNIN, M. I.; FONTAO, AWDREN. Socio-Technical Smell Dynamics in Code Samples: A Multivocal Review. In: <em>SBES 2025</em>, Recife, 2025.</p>
-                            <p>OLIVEIRA, M.; et al. Um relatório de análise dos cursos de graduação em ES no Brasil: revelações e insights. In: <em>SBES 2025 – Education Track</em>, Recife, 2025.</p>
-                            <p>BUENO, A. R. R. N.; BEZERRA, C.; CAFEO, B.; CAGNIN, M. I.; FONTÃO, A. Evolutionary Analysis of the Co-occurrence between Code Smells and Community Smells in Code Samples. In: <em>XXI Brazilian Symposium on Information Systems (SBSI)</em>, Recife, 2025.</p>
-                            <p>FERREIRA, G.; ALBUQUERQUE, M.; SOARES, M.; FONTÃO, A.; PAIVA, D. M. B. Diretrizes Pedagógicas e de Acessibilidade para Jogos Educativos Digitais. In: <em>SBSI 2025</em>, Recife, 2025.</p>
-                            <p>SILVA JUNIOR, C. C.; et al. Framing Cloud Migration of Legacy Systems as Technical Sustainability Requirements within a Proprietary Software Ecosystem. In: <em>Workshop on Requirements Engineering (WER)</em>, Rio de Janeiro, 2025.</p>
+                            <p>BUENO, A. R. R. N.; BEZERRA, C.; CAFEO, B.; CAGNIN, M. I.; FONTÃO, A. Evolutionary Analysis of the Co-occurrence between Code Smells and Community Smells in Code Samples. In: <em>Proceedings of the XXI Brazilian Symposium on Information Systems</em>, Recife, 2025.</p>
+                            <p>OUTAO, J.; COSTA, L. A. M.; ZACARIAS, R.; FONTÃO, A; CONSTANTINOU, E.; SANTOS, R. P.; SEREBRENIK, A. Proprietary Software Ecosystems: What We Already Know and Future Perspectives. In: <em>Proceedings of the 13th ACM/IEEE International Workshop on Software Engineering for Systems-of-Systems and Software Ecosystems</em>, Ottawa, 2025.</p>
+                            <p>FERREIRA, G.; ALBUQUERQUE, M.; SOARES, M.; FONTÃO, A; PAIVA, D. M. B. Diretrizes Pedagógicas e de Acessibilidade para Jogos Educativos Digitais. In: <em>Proceedings of the XXI Brazilian Symposium on Information Systems</em>, Recife, 2025.</p>
+                            <p>WASSOUF-JR, EDVALDO; FUKUDA, PEDRO; FONTÃO, AWDREN. Investigating the Developer Experience of LGBTQIAPN+ People in Agile Teams. In: <em>2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Society (ICSE-SEIS)</em>, Ottawa, 2025.</p>
+                            <p>WASSOUF, EDVALDO R.; PAIVA, DÉBORA; GAMA, KIEV; FONTÃO, AWDREN. The Developer Experience of LGBTQIA+ People in Agile Teams: A Multivocal Literature Review. In: <em>2025 IEEE/ACM 18th International Conference on Cooperative and Human Aspects of Software Engineering (CHASE)</em>, Ottawa, 2025.</p>
+                            <p>OLIVEIRA, M.; LIMA, I.; SILVA, B.; AYACH, F.; MENEZES, D.; SANTOS, RODRIGO PEREIRA DOS; FONTÃO, AWDREN; VIANA, D. Um relatório de análise dos cursos de graduação em ES no Brasil: revelações e insights. In: <em>Proceedings of the 39th Brazilian Symposium on Software Engineering (SBES 2025) - Education Track</em>, Recife, 2025.</p>
+                            <p>BUENO, A. R. R. N.; CAFEO, BRUNO; CAGNIN, M. I.; FONTAO, AWDREN. Socio-Technical Smell Dynamics in Code Samples: A Multivocal Review on Emergence, Evolution, and Co-Occurrence. In: <em>Proceedings of the 39th Brazilian Symposium on Software Engineering (SBES 2025)</em>, Recife, 2025.</p>
+                            <p>AYACH, FERNANDO; LAMEIRÃO, VITOR; LEAO, R.; FELIZARDO JUNIOR, J. J.; SOBRINHO, RAFAEL R.; BORGES, V.; MATSUBARA, P.; FONTAO, AWDREN. Generating Proto-Personas through Prompt Engineering: A Case Study on Efficiency, Effectiveness, and Empathy. In: <em>Proceedings of the 39th Brazilian Symposium on Software Engineering (SBES 2025)</em>, Recife, 2025.</p>
+                            <p>SILVA JUNIOR, CLAUDIO COELHO DA; OUTÃO, JULIANA CARVALHO SILVA DO; COSTA, LUIZ ALEXANDRE MARTINS DA; FONTÃO, AWDREN DE LIMA; SANTOS, RODRIGO PEREIRA DOS. Framing Cloud Migration of Legacy Systems as Technical Sustainability Requirements within a Proprietary Software Ecosystem. In: <em>Anais do Workshop em Engenharia de Requisitos</em>, Rio de Janeiro-RJ, 2025.</p>
+                            <p>COSTA, L. A.; FONTÃO, A. L; CONSTANTINOU, E.; DOS SANTOS, RODRIGO PEREIRA; SEREBRENIK, A. Building the Landing Zone for Site Reliability Engineering: A Multivocal Literature Review. In: <em>Proceedings of the 39th Brazilian Symposium on Software Engineering (SBES 2025)</em>, Recife, 2025.</p>
                             <div class="subheading mb-3">2024</div>
-                            <p>COSTA, L. A.; DIAS, E.; RIBEIRO, D.; FONTÃO, AWDREN; et al. An Actionable Framework for Understanding and Improving Talent Retention as a Competitive Advantage in IT Organizations. In: <em>IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings (ICSE Companion)</em>, Lisbon, 2024.</p>
-                            <p>LEÃO, R.; AYACH, F.; LAMEIRÃO, V.; FONTÃO, AWDREN. A Prompt Engineering-based Process to Build Proto-personas during Lean Inception. In: <em>XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES 2024)</em>, 2024.</p>
-                            <p>MELGAREJO, J. L.; FONTÃO, AWDREN; BORGES, H. S. Why is my community reacting like this? Understanding reactions in open-source communities. In: <em>SBES 2024</em>, 2024.</p>
-                            <p>MOTA, L. L.; SANTOS, R. P.; FONTÃO, AWDREN; ARAÚJO, A. A. From Theory to Interpreting the Practice: Exploring the Role-play to Teach DevOps. In: <em>SBES 2024</em>, 2024.</p>
-                            <p>SOARES, M. S.; et al. Pedagogical and accessibility guidelines for open educational resources focusing on blind students. In: <em>XXIII Brazilian Symposium on Human Factors in Computing Systems (IHC 2024)</em>, Brasília, 2024.</p>
-                            <p>SOBRINHO, R. R.; et al. Um estudo preliminar da migração de comunidade dos projetos nos ecossistemas AngularJS e Angular. In: <em>Anais Estendidos do XX SBSI</em>, 2024.</p>
+                            <p>LEÃO, RAUL; AYACH, FERNANDO; LAMEIRÃO, VITOR; FONTÃO, AWDREN. A Prompt Engineering-based Process to Build Proto-personas during Lean Inception. In: <em>Anais do XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES 2024)</em>, Brasil, 2024.</p>
+                            <p>SOBRINHO, RAFAEL R.; SOUPINSKI, FELIPE S.; OLIVEIRA, PEDRO A.; BORGES, HUDSON S.; FONTÃO, AWDREN. Um estudo preliminar da migração de comunidade dos projetos nos ecossistemas AngularJS e Angular. In: <em>Anais Estendidos do XX Simpósio Brasileiro de Sistemas de Informação (SBSI 2024)</em>, Brasil, 2024.</p>
+                            <p>COSTA, LUIZ ALEXANDRE; DIAS, EDSON; RIBEIRO, DANILO; FONTÃO, AWDREN; PINTO, GUSTAVO; SANTOS, RODRIGO PEREIRA DOS; SEREBRENIK, ALEXANDER. An Actionable Framework for Understanding and Improving Talent Retention as a Competitive Advantage in IT Organizations. In: <em>Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings</em>, Lisbon Portugal, 2024.</p>
+                            <p>SOARES, MICHELE DOS SANTOS; KAKINOHANA, GUSTAVO KIKEY; CAGNIN, MARIA ISTELA; SILVA, KENNEDY DOS SANTOS; FONTÃO, AWDREN DE LIMA; FREIRE, ANDRÉ PIMENTA; PAIVA, DÉBORA MARIA BARROSO. Pedagogical and accessibility guidelines for open educational resources focusing on blind students. In: <em>Proceedings of the XXIII Brazilian Symposium on Human Factors in Computing Systems</em>, Brasília - DF RJ Brazil, 2024.</p>
+                            <p>MOTA, LUCAS LIMA; SANTOS, RODRIGO PEREIRA DOS; FONTÃO, AWDREN; ARAÚJO, ALLYSSON ALLEX. From Theory to Interpreting the Practice: Exploring the Role-play to Teach DevOps. In: <em>Anais do XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES 2024)</em>, Brasil, 2024.</p>
+                            <p>MELGAREJO, JORGE LUÍS; FONTÃO, AWDREN DE LIMA; BORGES, HUDSON SILVA. Why is my community reacting like this? Understanding reactions in open-source communities. In: <em>Anais do XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES 2024)</em>, Brasil, 2024.</p>
                             <div class="subheading mb-3">2023</div>
-                            <p>ARANTES, P.; SOUPINSKI, F.; FONTÃO, AWDREN. <strong>Social Networks during Software Ecosystems' Death.</strong> In: <em>IEEE/ACM 11th International Workshop on Software Engineering for Systems-of-Systems and Software Ecosystems (SESoS @ ICSE)</em>, Melbourne, 2023. <em>⭐ Best Short Paper Award.</em></p>
-                            <p>FONTÃO, AWDREN; MATSUBARA, E.; MONGELLI, H.; et al. Hyacinth macaw: a project-based learning program to develop talents in Software Engineering for Artificial Intelligence. In: <em>XXXVII Brazilian Symposium on Software Engineering (SBES 2023)</em>, Campo Grande, 2023.</p>
-                            <p>MELO DE ARAÚJO, M. H.; COSTA, C.; FONTÃO, AWDREN. <strong>Analysis of the Technical Debt of Software Projects Based on Merge Code Comments.</strong> In: <em>17th Brazilian Symposium on Software Components, Architectures, and Reuse (SBCARS 2023)</em>, Campo Grande, 2023. <em>⭐ Distinguished Paper Award.</em></p>
-                            <p>DE MACEDO, G. T.; FONTÃO, AWDREN; GADELHA, B. UIProtoCheck: A Checklist for Semantic Inspection of User Interface Prototypes. In: <em>SBES 2023</em>, Campo Grande, 2023.</p>
-                            <p>COSTA, L. A.; SAMPAIO, A.; FONTÃO, AWDREN; SANTOS, R. P. Investigating Change and Incident Management in a Proprietary Software Ecosystem – Survival Mode On. In: <em>XII Brazilian Workshop on Social Network Analysis and Mining (BraSNAM 2023)</em>, 2023.</p>
-                            <p>ARANTES, P.; FONTÃO, AWDREN. Analisando a Morte de Ecossistemas de Software para plataformas Web a partir da abordagem de Redes Sociais e Reciclagem de Recursos. In: <em>XIV Congresso Brasileiro de Software: Teoria e Prática – CBSoft Estendido 2023</em>, 2023.</p>
+                            <p>DE MACEDO, GRETCHEN T.; FONTÃO, AWDREN; GADELHA, BRUNO. UIProtoCheck: A Checklist for Semantic Inspection of User Interface Prototypes. In: <em>Proceedings of the XXXVII Brazilian Symposium on Software Engineering</em>, Campo Grande Brazil, 2023.</p>
+                            <p>ARANTES, PEDRO; SOUPINSKI, FELIPE; FONTÃO, AWDREN. Social Networks during Software Ecosystems Death. In: <em>2023 IEEE/ACM 11th International Workshop on Software Engineering for Systems-of-Systems and Software Ecosystems (SESoS)</em>, Melbourne, 2023.</p>
+                            <p>COSTA, LUIZ ALEXANDRE; SAMPAIO, ALEXANDRE; FONTÃO, AWDREN; SANTOS, RODRIGO PEREIRA DOS. Investigating Change and Incident Management in a Proprietary Software Ecosystem - Survival Mode On. In: <em>Anais do XII Brazilian Workshop on Social Network Analysis and Mining (BraSNAM 2023)</em>, Brasil, 2023.</p>
+                            <p>ARANTES, PEDRO; FONTÃO, AWDREN. Analisando a Morte de Ecossistemas de Software para plataformas Web a partir da abordagem de Redes Sociais e Reciclagem de Recursos. In: <em>Anais Estendidos do XIV Congresso Brasileiro de Software: Teoria e Prática (CBSoft Estendido 2023)</em>, Brasil, 2023.</p>
+                            <p>MELO DE ARAÚJO, MARCOS HENRIQUE; COSTA, CATARINA; FONTÃO, AWDREN. Analysis of the Technical Debt of Software Projects Based on Merge Code Comments. In: <em>Proceedings of the 17th Brazilian Symposium on Software Components, Architectures, and Reuse</em>, Campo Grande Brazil, 2023.</p>
+                            <p>FONTÃO, AWDREN; MATSUBARA, EDSON; MONGELLI, HENRIQUE; MEDEIROS, MARCIO; LOURENÇO, CARLOS; MARTINS, HENRIQUE; CORTEZ, IGOR; BORGES, MARIA. Hyacinth macaw: a project-based learning program to develop talents in Software Engineering for Artificial Intelligence. In: <em>Proceedings of the XXXVII Brazilian Symposium on Software Engineering</em>, Campo Grande Brazil, 2023.</p>
                             <div class="subheading mb-3">2022</div>
-                            <p>SOUPINSKI, F. ; ARANTES, P. ; STEINMACHER, I. ; WIESE, IGOR ; BORGES, H. S. ; CAFEO, B. B. P. ; FONTÃO, AWDREN . 'We are dying!' On Death Signals of Software Ecosystems. In: Brazilian Symposium on Software Engineering (SBES 2022), 2022, Uberlândia. Proceedings of the 36th Brazilian Symposium on Software Engineering (SBES 2022) - Insightful Ideas and Emerging Results Track, 2022</p>
-                            <p>MAIA, K. ; PEREIRA, M. ; MONTEIRO, G. ; FONTÃO, AWDREN . Pattern with partners: A systematic approach to handle knowledge sharing in GSD projects. In: 17th ACM/IEEE International Conference on Global Software Engineering - ICGSE, 2022, Pittsburgh. Proceedings of the 17th ACM/IEEE International Conference on Global Software Engineering - ICGSE, 2022.</p>
-                            <p>CUNHA, A. E. ; CAFEO, B. B. P. ; VIANA, D. ; FONTÃO, AWDREN . An Opinion Survey on Skills of DevRel professionals. In: Brazilian Symposium on Information Systems (SBSI '22), 2022, Curitiba. Proceedings of the Brazilian Symposium on Information Systems (SBSI '22), 2022.</p>
+                            <p>MENEZES, GABRIEL; BRAGA, WILLIAN; FONTÃO, AWDREN; HORA, ANDRE; CAFEO, BRUNO. Assessing the Impact of Code Samples Evolution on Developers Questions. In: <em>Proceedings of the XXXVI Brazilian Symposium on Software Engineering</em>, Virtual Event Brazil, 2022.</p>
+                            <p>CUNHA, ANA ELISA DA SILVA; CAFEO, BRUNO B. P.; VIANA, DAVI; FONTÃO, AWDREN. A Survey on Skills of DevRel professionals. In: <em>XVIII Brazilian Symposium on Information Systems</em>, Curitiba Brazil, 2022.</p>
+                            <p>M. GONCALVES, KLINSMAN; PEREIRA, MARCELO; MONTEIRO, GELSON; FONTAO, AWDREN. Pattern with partners: A systematic approach to handle knowledge sharing in GSD projects. In: <em>Proceedings of the International Conference on Software and System Processes and International Conference on Global Software Engineering</em>, Pittsburgh PA USA, 2022.</p>
+                            <p>SOUPINSKI, FELIPE; ARANTES, PEDRO; STEINMACHER, IGOR; WIESE, IGOR; BORGES, HUDSON; CAFEO, BRUNO; FONTÃO, AWDREN. 'We are dying!' On Death Signals of Software Ecosystems. In: <em>Proceedings of the XXXVI Brazilian Symposium on Software Engineering</em>, Virtual Event Brazil, 2022.</p>
+                            <p>COSTA, LUIZ ALEXANDRE MARTINS; FONTÃO, AWDREN LIMA; SANTOS, RODRIGO PEREIRA. PSECO-IM: An Approach for Incident Management to Support Governance in Proprietary Software Ecosystems. In: <em>Proceedings of the XXI Brazilian Symposium on Software Quality</em>, Curitiba Brazil, 2022.</p>
+                            <p>DE MACEDO, GRETCHEN TORRES; FONTÃO, AWDREN DE LIMA; GADELHA, BRUNO FREITAS. Prototyping in Software Quality Assurance: A Survey With Software Practitioners. In: <em>Proceedings of the XXI Brazilian Symposium on Software Quality</em>, Curitiba Brazil, 2022.</p>
+                            <p>NOVAIS, PEDRO LOPEZ; FONTÃO, AWDREN DE LIMA; BORGES, HUDSON SILVA; VALENTE, MARCO TULIO. Como os mantenedores usam GitHub Reactions? Um estudo exploratório. In: <em>Anais do X Workshop de Visualização, Evolução e Manutenção de Software (VEM 2022)</em>, Brasil, 2022.</p>
                             <div class="subheading mb-3">2021</div>
-                            <p>COSTA, L. A. ; FONTÃO, A ; SANTOS, R. P. . Investigating Proprietary Software Ecosystem Governance and Health: An Updated and Refined Perspective. In: SBSI'21: XVII Brazilian Symposium on Information Systems, 2021, Uberlândia. SBSI'21: XVII Brazilian Symposium on Information Systems. New York: ACM, 2021.</p>
-                            <p>OLIVEIRA, R. ; CRUZ, C. A. ; VIANA, D. ; CAFEO, B. B. P. ; FONTÃO, AWDREN . Developer Relations (DevRel) Roles: an Exploratory Study on Practitioners? opinions. In: Brazilian Symposium on Software Engineering (SBES '21), 2021, Joinville. Proceedings of the 35th Brazilian Symposium on Software Engineering (SBES 2021), 2021.</p>
-                            <p>SHINZATO, F. ; PAIVA, D. M. B. ; CAGNIN, M. I. ; CAFEO, B. B. P. ; FONTÃO, AWDREN . Graduei e agora preciso testar apps: com que barreiras posso me deparar?. In: XX Brazilian Software Quality Symposium (SBQS), 2021, Vitória. Proceedings of the XX Brazilian Software Quality Symposium (SBQS), 2021.</p>
+                            <p>COSTA, LUIZ ALEXANDRE; FONTÃO, AWDREN; Santos, Rodrigo. Investigating Proprietary Software Ecosystem Governance and Health: An Updated and Refined Perspective. In: <em>XVII Brazilian Symposium on Information Systems</em>, Uberlândia Brazil, 2021.</p>
+                            <p>OLIVEIRA, R.; CRUZ, C. A.; VIANA, D.; CAFEO, B. B. P.; FONTÃO, AWDREN. Developer Relations (DevRel) Roles: an Exploratory Study on Practitioners opinions. In: <em>Proceedings of the 35th Brazilian Symposium on Software Engineering (SBES 2021)</em>, Joinville, 2021.</p>
+                            <p>SHINZATO, FLÁVIO; PAIVA, DÉBORA MARIA BARROSO; CAGIN, MARIA ISTELA; CAFEO, BRUNO B. P.; FONTÃO, AWDREN. So youve graduated college and need to test apps: What barriers might you face?. In: <em>XX Brazilian Symposium on Software Quality</em>, Virtual Event Brazil, 2021.</p>
                             <div class="subheading mb-3">2020</div>
-                            <p>COSTA, L. A. ; FONTÃO, AWDREN ; SANTOS, R. P. . Investigating Asset Governance Mechanisms in a Proprietary Software Ecosystem. In: XVI Brazilian Symposium on Information Systems - SBSI'20, 2020, São Bernando do Campo. Proceedings of the XVI Brazilian Symposium on Information Systems - SBSI'20</p>
-                            <p>FONTÃO, AWDREN; CLEGER-TAMAYO, S. ; WIESE, IGOR ; DOS SANTOS, RODRIGO PEREIRA ; DIAS-NETO, ARILO CLAUDIO . On Value Creation in Developer Relations (DevRel): a practitioners? perspective. In: International Conference on Global Software Engineering, 2020, Seoul. 15th ACM/IEEE International Conference on Global Software Engineering - ICGSE</p>
-                            <p>FONTÃO, AWDREN; CAFEO, B. B. P. ; BONIFACIO, B. ; DOS SANTOS, RODRIGO PEREIRA ; Dias-Neto, Arilo . On Developer Relations Team?s Reasons for Using Repositories. In: Workshop on Cooperative and Human Aspects of Software Engineering (CHASE), 2020, SEOUL. Proceedings of the 13th International Workshop on Cooperative and Human Aspects of Software Engineering</p>
-                            <p>COSTA, L. A. M. ; FONTÃO, AWDREN ; DOS SANTOS, RODRIGO PEREIRA . Uma Abordagem para Gestão de Incidentes em Ecossistemas de Software Proprietário.. In: XVI Simpósio Brasileiro de Sistemas de Informação, 2020, São Bernado do Campo. Anais Estendidos do Simpósio Brasileiro de Sistemas de Informação (SBSI), WTDSI</p>
-                            <p>MORAIS, F. L. ; FONTÃO, AWDREN ; CLEGER-TAMAYO, S. . Combining Design Thinking and Scrum to enhance Test Suite during innovative software development. In: Ibero-American Conference on Software Engineering (CIbSE), 2020, Curitiba. Proceeding of the XXXIII Ibero-American Conference on Software Engineering</p>
+                            <p>FONTÃO, AWDREN; Santos, Rodrigo; DIAS-NETO, ARILO CLAUDIO. DevGo: Um Modelo para Governança de Desenvolvedores em Ecossistema de Software Móvel a partir de Developer Relations. In: <em>Anais Estendidos do XVI Simpósio Brasileiro de Sistemas de Informação (Anais Estendidos do SBSI 2020)</em>, Brasil, 2020.</p>
+                            <p>MASSANORI, DANIEL; CAFEO, BRUNO B. P.; WIESE, IGOR; FONTÃO, AWDREN. Death of a Software Ecosystem. In: <em>Proceedings of the 34th Brazilian Symposium on Software Engineering</em>, Natal Brazil, 2020.</p>
+                            <p>BRAGA, WILLIAN; MENEZES, GABRIEL; FONTÃO, AWDREN; HORA, ANDRÉ; CAFEO, BRUNO. Quero lhe usar! Uma Análise do Público Alvo de Code Samples. In: <em>Anais do VIII Workshop de Visualização, Evolução e Manutenção de Software (VEM 2020)</em>, Brasil, 2020.</p>
+                            <p>FONTÃO, AWDREN; CLEGER-TAMAYO, S.; WIESE, IGOR; DOS SANTOS, RODRIGO PEREIRA; DIAS-NETO, ARILO CLAUDIO. On Value Creation in Developer Relations (DevRel): a practitioners perspective. In: <em>15th ACM/IEEE International Conference on Global Software Engineering - ICGSE 2020</em>, Seoul, 2020.</p>
+                            <p>MORAIS, F. L.; FONTÃO, AWDREN; CLEGER-TAMAYO, S. Combining Design Thinking and Scrum to enhance Test Suite during innovative software development. In: <em>Proceeding of the XXXIII Ibero-American Conference on Software Engineering</em>, Curitiba, 2020.</p>
+                            <p>COSTA, LUIZ ALEXANDRE; FONTÃO, AWDREN; Santos, Rodrigo. Investigating Asset Governance Mechanisms in a Proprietary Software Ecosystem. In: <em>XVI Brazilian Symposium on Information Systems</em>, São Bernardo do Campo Brazil, 2020.</p>
+                            <p>FONTÃO, AWDREN; CAFEO, B. B. P.; BONIFACIO, B.; DOS SANTOS, RODRIGO PEREIRA; Dias-Neto, Arilo. On Developer Relations Teams Reasons for Using Repositories. In: <em>Proceedings of the 13th International Workshop on Cooperative and Human Aspects of Software Engineering</em>, SEOUL, 2020.</p>
+                            <p>CONDINA, VINICIUS; MALCHER, PAULO; FARIAS, VICTOR; Santos, Rodrigo; FONTÃO, AWDREN; WIESE, IGOR; VIANA, DAVI. An Exploratory Study on Developers Opinions about Influence in Open Source Software Ecosystems. In: <em>Proceedings of the XXXIV Brazilian Symposium on Software Engineering</em>, Natal Brazil, 2020.</p>
+                            <p>IMAMURA, M.; COSTA, L. A. M.; FERREIRA, F. H.; FONTAO, AWDREN; DOS SANTOS, RODRIGO PEREIRA. Fatores de Governança em Sistemas-de-Sistemas: Análise de uma Instituição Pública Brasileira. In: <em>ANAIS DO V WORKSHOP SOBRE ASPECTOS SOCIAIS, HUMANOS E ECONÔMICOS DE SOFTWARE</em>, Cuiabá, 2020.</p>
+                            <p>COSTA, L. A. M.; FONTÃO, AWDREN; DOS SANTOS, RODRIGO PEREIRA. Uma Abordagem para Gestão de Incidentes em Ecossistemas de Software Proprietário. In: <em>Anais Estendidos do Simpósio Brasileiro de Sistemas de Informação (SBSI), WTDSI</em>, São Bernado do Campo, 2020.</p>
                             <div class="subheading mb-3">2019</div>
-                            <p>FONTÃO, AWDREN; GADELHA, B. ; CASTRO JUNIOR, A. . Balancing theory and practice in software engineering education - A PBL, toolset based approach. In: Frontiers in Education, 2019, Cincinnati. 49th Annual Frontiers in Education (FIE) Conference</p>
-                            <p>LIMA, M. ; FONTÃO, AWDREN ; FERNANDES, D. ; CONTE, T. ; GADELHA, B. . How are my Students going? A Tool to Analyse Students? Interactions on Capstone Courses. In: Brazilian Symposium on Informatics in Education (SBIE), 2019, Brasília. Proceedings of the XXX Brazilian Symposium on Informatics in Education</p>
+                            <p>FONTÃO, AWDREN; GADELHA, B.; CASTRO JUNIOR, A. Balancing theory and practice in software engineering education - A PBL, toolset based approach. In: <em>49th Annual Frontiers in Education (FIE) Conference</em>, Cincinnati, 2019.</p>
+                            <p>LIMA, M.; FONTÃO, AWDREN; FERNANDES, D.; CONTE, T.; GADELHA, B. How are my Students going? A Tool to Analyse Students Interactions on Capstone Courses. In: <em>Proceedings of the XXX Brazilian Symposium on Informatics in Education</em>, Brasília, 2019.</p>
                             <div class="subheading mb-3">2018</div>
-                            <p>FONTÃO, A; ESTACIO, B. ; FERNANDES, J. ; SANTOS, R. P. ; DIAS-NETO, ARILO CLAUDIO . Which factors affect the evangelist's support during training sessions in Mobile Software Ecosystems?. In: 12th European Conference on Software Architecture - Workshops, 2018, Madrid. 12th European Conference on Software Architecture: Companion Proceedings</p>
-                            <p>FONTÃO, AWDREN; BONIFACIO, B. ; SANTOS, RODRIGO PEREIRA DOS ; DIAS-NETO, ARILO CLAUDIO . Mobile Application Development Training in Mobile Software Ecosystem: Investigating the Developer eXperience. In: Brazilian Symposium on Software Quality (SBQS 2018), 2018, Curitiba. Proceedings of the 17th Brazilian Symposium on Software Quality</p>
+                            <p>FONTÃO, AWDREN; ESTÁCIO, BERNARDO; FERNANDES, JULIANA; DOS SANTOS, RODRIGO PEREIRA; DIAS-NETO, ARILO CLAUDIO. Which factors affect the evangelist's support during training sessions in mobile software ecosystems?. In: <em>Proceedings of the 12th European Conference on Software Architecture Companion Proceedings - ECSA '18</em>, Madrid, 2018.</p>
+                            <p>FONTÃO, AWDREN; BONIFACIO, B.; SANTOS, RODRIGO PEREIRA DOS; DIAS-NETO, ARILO CLAUDIO. Mobile Application Development Training in Mobile Software Ecosystem: Investigating the Developer eXperience. In: <em>Proceedings of the 17th Brazilian Symposium on Software Quality (SBQS 2018)</em>, Curitiba, 2018.</p>
                             <div class="subheading mb-3">2017</div>
-                            <p>FONTÃO, A. L.; Dias-Neto, Arilo ; VIANA, D. . Investigating factors that influence developers experience in mobile software ecosystems. In: ICSE Joint 5th International Workshop on Software Engineering for Systems-of-systems and 11th Workshop on Distributed Software Development, Software Ecosystems and Systems-of-Systems, 2017, Buenos Aires. Proceedings of the ICSE Joint 5th International Workshop on Software Engineering for Systems-of-systems and 11th Workshop on Distributed Software Development, Software Ecosystems and Systems-of-Systems</p>
-                            <p>EKWOGE, O. ; FONTAO, AWDREN DE LIMA ; Dias-Neto, Arilo . Tester Experience: Concept, Issues and Definition. In: COMPSAC 2017 - The 41th Annual International Computers, Software & Applications Conference, 2017, Turin. Proceedings of the COMPSAC</p>
-                            <p>ASCATE, S. ; MENDES, I. ; OLIVEIRA, K. ; FONTAO, AWDREN DE LIMA ; ROJAS, I. ; Dias-Neto, Arilo . Challenges in Model Based Testing for Mobile Applications. In: CIbSE 2017, 2017, Buenos Aires. XX Ibero-American Conference on Software Engineering</p>
-                            <p>FONTÃO, AWDREN; EKWOGE, O. ; Santos, Rodrigo ; Dias-Neto, Arilo . Facing up the primary emotions in Mobile Software Ecosystems from Developer Experience. In: Workshop on Social, Human, and Economic Aspects of Software (WASHES) at the 16th International Conference on Software Reuse, 2017, Salvador. 2nd Workshop on Social, Human, and Economic Aspects of Software</p>
-                            <p>FONTÃO, A. L.; LIMA, F. ; ABIA, B. ; SANTOS, RODRIGO PEREIRA DOS ; Dias-Neto, Arilo . Hearing the Voice of Developers in Mobile Software Ecosystems. In: Brazilian Symposium on Software Engineering (SBES)</p>
-                            <p>FONTÃO, A. L.; DOS SANTOS, RODRIGO PEREIRA ; DIAS-NETO, ARILO CLAUDIO . MSECO-CERT: Uma Abordagem Baseada em Processo para Apoiar a Certificação de Apps em Ecossistema de Software Móvel. In: XVI SBQS - XVI Simpósio Brasileiro de Qualidade de Software, 2017, Rio de Janeiro. Anais do XVI SBQS</p>
-                            <p>FONTÃO, A. L.; SANTOS, R. P. ; DIAS-NETO, ARILO CLAUDIO . Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems. In: ICSR 2017 - 16th International Conference on Software Reuse</p>
+                            <p>FONTÃO, AWDREN; EKWOGE, OSWALD M.; Santos, Rodrigo; DIAS-NETO, ARILO CLAUDIO. Facing up the primary emotions in Mobile Software Ecosystems from Developer Experience. In: <em>Proceedings of the 2nd Workshop on Social, Human, and Economic Aspects of Software  - WASHES '17</em>, Salvador, 2017.</p>
+                            <p>ASCATE, S.; MENDES, I.; OLIVEIRA, K.; FONTAO, AWDREN DE LIMA; ROJAS, I.; Dias-Neto, Arilo. Challenges in Model Based Testing for Mobile Applications. In: <em>XX Ibero-American Conference on Software Engineering</em>, Buenos Aires, 2017.</p>
+                            <p>FONTÃO, A. L.; Dias-Neto, Arilo; VIANA, D. Investigating factors that influence developers experience in mobile software ecosystems. In: <em>Proceedings of the ICSE Joint 5th International Workshop on Software Engineering for Systems-of-systems and 11th Workshop on Distributed Software Development, Software Ecosystems and Systems-of-Systems</em>, Buenos Aires, 2017.</p>
+                            <p>EKWOGE, O.; FONTAO, AWDREN DE LIMA; Dias-Neto, Arilo. Tester Experience: Concept, Issues and Definition. In: <em>Proceedings of the COMPSAC 2017</em>, Turin, 2017.</p>
+                            <p>FONTÃO, A. L.; DOS SANTOS, RODRIGO PEREIRA; DIAS-NETO, ARILO CLAUDIO. MSECO-CERT: Uma Abordagem Baseada em Processo para Apoiar a Certificação de Apps em Ecossistema de Software Móvel. In: <em>Anais do XVI SBQS</em>, Rio de Janeiro, 2017.</p>
+                            <p>FONTÃO, A. L.; SANTOS, R. P.; DIAS-NETO, ARILO CLAUDIO. Towards a Guideline-Based Approach to Govern Developers in Mobile Software Ecosystems. In: <em>Proceedings of the ICSR 2017: Mastering Scale and Complexity in Software Reuse</em>, Salvador, 2017.</p>
+                            <p>FONTÃO, AWDREN; LIMA, FABRICIO; ÁBIA, BRUNO; DOS SANTOS, RODRIGO PEREIRA; DIAS-NETO, ARILO CLAUDIO. Hearing the Voice of Developers in Mobile Software Ecosystems. In: <em>Proceedings of the 31st Brazilian Symposium on Software Engineering  - SBES'17</em>, Fortaleza, 2017.</p>
                             <div class="subheading mb-3">2016</div>
-                            <p>BEZERRA, A. ; FONTAO, AWDREN DE LIMA ; Dias-Neto, Arilo . Simulação de Ecossistemas de Software Móvel: Estado da Arte, Desafios e Oportunidades. In: 13th Empirical Software Engineering Latin American Workshop (ESELAW 2016)</p>
-                            <p>FONTAO, AWDREN DE LIMA; SANTOS, RODRIGO PEREIRA DOS ; FEIJO, J. ; NETO, ARILO CLAUDIO DIAS . MSECO-DEV: Application Development Process in Mobile Software Ecosystems. In: The 28th International Conference on Software Engineering & Knowledge Engineering, 2016, San Francisco Bay. The Twenty-Eighth International Conference on Software Engineering and Knowledge Engineering (SEKE 2016)</p>
-                            <p>LOBO, L. ; FONTÃO, AWDREN ; BEZERRA, A. ; Dias-Neto, Arilo . An Empirical Analysis of Mobile Apps Popularity Metrics in Mobile Software Ecosystems. In: Brazilian Symposium on Software Quality, 2016, Maceió. Proceedings of the 15th Brazilian Symposium on Software Quality</p>
-                            <p>PEDRACA, B. ; FERNANDES, P. ; BONIFACIO, B. ; FONTÃO, AWDREN ; Dias-Neto, Arilo . Explorando a Personalidade do Desenvolvedor em Ecossistemas de Software Móvel. In: Workshop sobre Aspectos Sociais, Humanos e Econômicos de Software (WASHES)</p>
-                            <p>PEDRACA, B. ; BONIFACIO, B. ; FERNANDES, P. ; FONTÃO, AWDREN ; Dias-Neto, Arilo . O Ensino de Programação Mobile em Ecossistema Móvel. In: TISE - Conferência Internacional sobre Informática na Educação</p>
+                            <p>FONTAO, AWDREN DE LIMA; NETO, ARILO CLAUDIO DIAS. GoDev-DX: Governança de Desenvolvedores em Ecossistemas de Software Móvel a partir da Experiência do Desenvolvedor. In: <em>3rd Latin-American School on Software Engineering (ELA-ES)</em>, Natal, 2016.</p>
+                            <p>BEZERRA, A.; FONTÃO, A. L. Identificando Características de Aplicações para Simulação de Ecossistemas de Software Móveis. In: <em>Anais do VII Congresso Brasileiro de Software: Teoria e Prática (CBSoft)</em>, Maringá, 2016.</p>
+                            <p>BEZERRA, A.; FONTAO, AWDREN DE LIMA; Dias-Neto, Arilo. Simulação de Ecossistemas de Software Móvel: Estado da Arte, Desafios e Oportunidades. In: <em>13th Empirical Software Engineering Latin American Workshop (ESELAW 2016)</em>, Quito, 2016.</p>
+                            <p>FONTAO, AWDREN DE LIMA; SANTOS, RODRIGO PEREIRA DOS; FEIJO, J.; NETO, ARILO CLAUDIO DIAS. MSECO-DEV: Application Development Process in Mobile Software Ecosystems. In: <em>The Twenty-Eighth International Conference on Software Engineering and Knowledge Engineering (SEKE 2016)</em>, San Francisco Bay, 2016.</p>
+                            <p>PEDRACA, B.; FERNANDES, P.; BONIFACIO, B.; FONTÃO, AWDREN; Dias-Neto, Arilo. Explorando a Personalidade do Desenvolvedor em Ecossistemas de Software Móvel. In: <em>I Workshop sobre Aspectos Sociais, Humanos e Econômicos de Software</em>, Maceió, 2016.</p>
+                            <p>PEDRACA, B.; BONIFACIO, B.; FERNANDES, P.; FONTÃO, AWDREN; Dias-Neto, Arilo. O Ensino de Programação Mobile em Ecossistema Móvel. In: <em>Anais da XXI Conferência Internacional sobre Informática na Educação (TISE)</em>, 2016.</p>
+                            <p>SANTOS, J.; FERNANDES, P.; GONCALVES, E.; FONTÃO, A. L.; BONIFACIO, B. Caracterizando Fatores de Influência na Experiência do Desenvolvedor em Ecossistemas de Software Móvel. In: <em>Anais do VII Congresso Brasileiro de Software: Teoria e Prática (CBSoft)</em>, Maringá, 2016.</p>
+                            <p>LOBO, L.; FONTÃO, AWDREN; BEZERRA, A.; Dias-Neto, Arilo. An Empirical Analysis of Mobile Apps Popularity Metrics in Mobile Software Ecosystems. In: <em>Proceedings of the 15th Brazilian Symposium on Software Quality</em>, Maceió, 2016.</p>
                             <div class="subheading mb-3">2015</div>
-                            <p>FONTÃO, A. L.; Santos, Rodrigo ; Dias-Neto, Arilo . Mobile Software Ecosystem (MSECO): A Systematic Mapping Study. In: COMPSAC 2015 - The 39th Annual International Computers, Software & Applications Conference</p>
-                            <p>REIS, R. A. C. ; FONTÃO, A. L. ; LOBO, L. ; Dias-Neto, Arilo . Usability Evaluation Approaches for (Ubiquitous) Mobile Applications: A Systematic Mapping Study. In: UBICOMM 2015: The Ninth International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies</p>
-                            <p>FONTÃO, A. L.; Dias-Neto, Arilo . MSECO Cert: Uma abordagem baseada em processo para apoiar a certificação de apps em Ecossistemas de Software Móvel. In: SBQS - Simpósio Brasileiro de Qualidade de Sotware, WTDQS - Workshop de Teses e Dissertações em Qualidade de Software</p>
-                            <p>FONTAO, AWDREN DE LIMA; SANTOS, RODRIGO PEREIRA DOS ; NETO, ARILO CLAUDIO DIAS . MSECO-SUP: Support Process in Mobile Software Ecosystems. In: 2015 29th Brazilian Symposium on Software Engineering (SBES)</p>
-                            <p>BIASE, C. ; FERNANDES, P. ; FONTÃO, A. L. ; FERNANDES, M. ; BONIFACIO, B. . Avaliando a Experiência de Desenvolvedores (DX) no Processo de Ensino de Desenvolvimento de Aplicações Móveis</p>
+                            <p>FONTÃO, A. L.; Dias-Neto, Arilo. MSECO Cert: Uma abordagem baseada em processo para apoiar a certificação de apps em Ecossistemas de Software Móvel. In: <em>Anais do Workshop de Teses e Dissertações em Qualidade de Software</em>, Manaus, 2015.</p>
+                            <p>REIS, R. A. C.; FONTÃO, A. L.; LOBO, L.; Dias-Neto, Arilo. Usability Evaluation Approaches for (Ubiquitous) Mobile Applications: A Systematic Mapping Study. In: <em>The Ninth International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies</em>, Nice, 2015.</p>
+                            <p>FONTÃO, A. L.; Santos, Rodrigo; Dias-Neto, Arilo. Mobile Software Ecosystem (MSECO): A Systematic Mapping Study. In: <em>Proceedings of the COMPSAC 2015</em>, Taichung, Taiwan, 2015.</p>
+                            <p>FONTAO, AWDREN DE LIMA; SANTOS, RODRIGO PEREIRA DOS; NETO, ARILO CLAUDIO DIAS. MSECO-SUP: Support Process in Mobile Software Ecosystems. In: <em>2015 29th Brazilian Symposium on Software Engineering</em>, Belo Horizonte-MG, 2015.</p>
+                            <p>FONTAO, AWDREN DE LIMA; NETO, ARILO CLAUDIO DIAS. MSECO Cert: Process-based Approach to Support Apps Certification in Mobile Software Ecosystem. In: <em>1st Amazon Advanced School of Software Quality (AASSQ)</em>, Manaus, 2015.</p>
+                            <p>BIASE, C.; FERNANDES, P.; FONTÃO, A. L.; FERNANDES, M.; BONIFACIO, B. Avaliando a Experiência de Desenvolvedores (DX) no Processo de Ensino de Desenvolvimento de Aplicações Móveis. In: <em>Conferência Ibero-Americana WWW/Internet 2015</em>, Florianópolis, 2015.</p>
+                            <p>FONTÃO, A. L.; Santos, Rodrigo; Dias-Neto, Arilo. Research Opportunities for Mobile Software Ecosystems. In: <em>CBSoft 2015 - IX Workshop em Desenvolvimento Distribuído de Software, Ecossistemas de Software e Sistemas-de-Sistemas</em>, Belo Horizonte, 2015.</p>
                             <div class="subheading mb-3">2014</div>
-                            <p>FONTÃO, A. L.; BONIFACIO, B. ; Dias-Neto, Arilo ; BEZERRA, A. ; Santos, Rodrigo . MSECO Skill: Construção de Competências de Desenvolvedores em Ecossistemas de Software Móvel. In: CIbSE - Congreso Iberoamericano en Ingeniería de Software</p>
+                            <p>FONTÃO, A. L.; BONIFACIO, B.; Dias-Neto, Arilo; BEZERRA, A.; Santos, Rodrigo. MSECO Skill: Construção de Competências de Desenvolvedores em Ecossistemas de Software Móvel. In: <em>XVII Congreso Iberoamericano en Ingeniería de Software</em>, Pucon, 2014.</p>
+                            <p>CASTRO, A.; FONTÃO, A. L.; Dias-Neto, Arilo. An Approach to Perform Automated Functional Testing in Database-Driven Applications. In: <em>XVII Congreso Iberoamericano en Ingeniería de Software</em>, 2014.</p>
+                            <p>Santos, Rodrigo; VALENCA, G.; VIANA, D.; ESTACIO, B.; FONTÃO, A. L.; MARCZAK, S.; WERNER, C.; ALVES, C.; CONTE, T.; PRIKLADNICKI, R. Qualidade em Ecossistemas de Software: Desafios e Oportunidades de Pesquisa. In: <em>CBSoft 2014 - Congresso Brasileiro de Software: Teoria e Prática. VIII Workshop de Desenvolvimento Distribuído de Software, Ecossistemas de Software e Sistemas de Sistemas - WDES</em>, Maceió, 2014.</p>
+                            <div class="subheading mb-3">2012</div>
+                            <p>FONTÃO, A. L.; BONIFACIO, B.; NICOLAY, A. Apps Framework: Um processo centrado no usuário aplicado para o desenvolvimento de aplicativos móveis - Um Estudo de Caso. In: <em>WWW/Internet 2012</em>, Madrid, 2012.</p>
+                            <div class="subheading mb-3">2010</div>
+                            <p>OLIVEIRA, H. A. B. F.; BARRETO, R. S.; FONTÃO, A. L.; NAKAMURA, F. EDUARDO; LOUREIRO, A. A. F. Envio de Dados de Consulta para Sinks Móveis em Alta Velocidade em Redes de Sensores Sem Fio. In: <em>Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos</em>, Gramado, 2010.</p>
+                            <p>OLIVEIRA, H. A. B. F.; BARRETO, R. S.; FONTÃO, A. L.; NAKAMURA, F. EDUARDO; LOUREIRO, A. A. F. A Novel Greedy Forward Algorithm for Routing Data Toward a High Speed Sink in Wireless Sensor Networks. In: <em>19th International Conference on Computer Communications and Networks (ICCCN'10)</em>, Zurique, 2010.</p>
                         </div>
                     </div>
-        
                 </div>
             </section>
             <hr class="m-0" />
@@ -219,36 +291,54 @@
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Research</h2>
-                    I research the intersections of Software Engineering, Software Ecosystems, and Artificial Intelligence, focusing on Developer Relations (DevRel), Developer eXperience (DX), and Software Engineering for/with AI.
-                    <div class=”d-flex flex-column flex-md-row justify-content-between mb-5”>
-                        <div class=”flex-grow-1”>
-                            <h3 class=”mb-0”>Current Research Topics</h3>
-                            <div class=”subheading mb-3”>Developer Relations (DevRel) &amp; Developer eXperience (DX)</div>
-                            <p>DevRel is the interface between third-party developers and a platform’s product, engineering, and design teams. As part of Software Ecosystem governance, I investigate how DevRel teams create value, govern developer communities, and sustain ecosystems over time. Research topics include DevRel roles and skills, value creation strategies, and governance models for mobile and proprietary ecosystems.</p>
-                            <div class=”subheading mb-3”>Software Engineering for/with Artificial Intelligence (SE4AI / SE4DS)</div>
-                            <p>With the growing adoption of Machine Learning and Deep Learning in software products, specific Software Engineering challenges arise: model traceability, technical debt in ML pipelines, architecture of intelligent systems, and security. I investigate engineering practices applied to AI-based systems, including MLOps, AIOps, prompt engineering, and security tactics for intelligent software architectures.</p>
-                            <div class=”subheading mb-3”>Software Ecosystems (SECO)</div>
-                            <p>Software Ecosystems involve the technical, social, and business dimensions of interactions among platforms, developers, and users. I research SECO governance, health metrics, ecosystem death signals, and mining of software repositories to understand community dynamics.</p>
-                            <div class=”subheading mb-3”>Software Engineering (SE)</div>
-                            <p>Experimental and Empirical Software Engineering | Mining Software Repositories | Software Testing, Verification and Validation | Software Engineering Education</p>
+                    <p class="lead mb-4">I research the intersections of Software Engineering, Software Ecosystems, and Artificial Intelligence, focusing on Developer Relations (DevRel), Developer eXperience (DX), and Software Engineering for/with AI.</p>
+
+                    <h3 class="mb-3">Research Lines</h3>
+                    <div class="topic-grid">
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Developer Relations (DevRel)</div>
+                            <p>DevRel is the interface between third-party developers and a platform's product, engineering, and design teams. As part of Software Ecosystem governance, I investigate how DevRel teams create value, govern developer communities, and sustain ecosystems over time — DevRel roles and skills, value creation strategies, and governance models for mobile and proprietary ecosystems.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Software Ecosystems</div>
+                            <p>Software Ecosystems involve the technical, social, and business dimensions of interactions among platforms, developers, and users. I research SECO governance, health metrics, and ecosystem death signals.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Mobile Software Ecosystems</div>
+                            <p>My PhD and early research focused on governance, certification, and developer experience within mobile application ecosystems — processes to support developers throughout the app lifecycle, from onboarding to certification.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Software Engineering applied to Machine Learning and Deep Learning</div>
+                            <p>With the growing adoption of Machine Learning and Deep Learning in software products, specific Software Engineering challenges arise: model traceability, technical debt in ML pipelines, architecture of intelligent systems, and security tactics for AI-based systems.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Mining Software Repositories</div>
+                            <p>I mine and analyze data from Git, GitHub, and Q&amp;A platforms such as Stack Overflow to understand developer behavior, community dynamics, and code and community smells in open-source and proprietary projects.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Software Verification, Validation &amp; Testing</div>
+                            <p>Research on software testing techniques and processes, quality assurance, and the tester's experience (Tester Experience) throughout the testing lifecycle.</p>
+                        </div>
+                        <div class="card card-hover topic-card">
+                            <div class="subheading mb-1">Software Engineering</div>
+                            <p>Experimental and Empirical Software Engineering | Software Engineering Education</p>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Partnerships</h3>
-                            <div class="subheading mb-3">I am conducting research in partnership with:</div>
-                            <p>Arilo Claudio Dias Neto (HelloSaks)</p>
-                            <p>Bernardo Estácio (Researcher @Takeaway.com)</p>
-                            <p>Bruno Bonifácio (Researcher @SIDIA)</p>
-                            <p>Bruno Cafeo (Professor @FACOM/UFMS)</p>
-                            <p>Bruno Gadelha (Professor/Researcher @ICOMP/UFAM)</p>
-                            <p>Davi Viana(Professor/Researcher @UFMA)</p>
-                            <p>Hudson Borges (Professor/Researcher @FACOM/UFMS)</p>
-                            <p>Igor Wiese (Professor @UTFPR)</p>
-                            <p>Marcelo Quinta (Software Engineer @WhatsApp Inc.)</p>
-                            <p>Rodrigo Pereira dos Santos (Professor @UNIRIO</p>
-                            <p>Sérgio Cleger Tamayo (Researcher @SIDIA)</p>
-                        </div>
+
+                    <h3 class="mb-3">Partnerships</h3>
+                    <div class="subheading mb-3">I am conducting research in partnership with:</div>
+                    <div class="partner-grid">
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Arilo Claudio Dias Neto</strong><small>HelloSaks</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Bernardo Estácio</strong><small>Researcher @Takeaway.com</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Bruno Bonifácio</strong><small>Researcher @SIDIA</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Bruno Cafeo</strong><small>Professor @FACOM/UFMS</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Bruno Gadelha</strong><small>Professor/Researcher @ICOMP/UFAM</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Davi Viana</strong><small>Professor/Researcher @UFMA</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Hudson Borges</strong><small>Professor/Researcher @FACOM/UFMS</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Igor Wiese</strong><small>Professor @UTFPR</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Marcelo Quinta</strong><small>Software Engineer @WhatsApp Inc.</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Rodrigo Pereira dos Santos</strong><small>Professor @UNIRIO</small></span></div>
+                        <div class="card partner-card"><i class="fas fa-user-tie"></i><span><strong>Sérgio Cleger Tamayo</strong><small>Researcher @SIDIA</small></span></div>
                     </div>
                 </div>
             </section>
@@ -258,70 +348,96 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Students</h2>
 
-                    <div class="subheading mb-3">Current Students — Doctorate (PhD)</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Ricardo Kondo (PhD @PPGCC/UFMS, 2026–) A definir.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Jose Vieira dos Santos Neto (PhD @PPGCC/UFMS, 2025–) A definir.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Luiz Alexandre Martins da Costa (PhD @PPGI/UNIRIO, 2022– | co-supervisor) A definir.</li>
-                    </ul>
+                    <div class="student-grid">
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Current Students — Doctorate (PhD)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Ricardo Kondo (PhD @PPGCC/UFMS, 2026–) Toward a Theory of LLM-Assisted Discovery of Hidden Requirements in Software Engineering.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Jose Vieira dos Santos Neto (PhD @PPGCC/UFMS, 2025–) A definir.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Breno José Vergílio (PhD @PPGCC/UFMS, 2024–) Táticas de segurança para arquitetura de software baseado em IA.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Luiz Alexandre Martins da Costa (PhD @PPGI/UNIRIO, 2022– | co-supervisor) A definir.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Current Students — Master’s (MSc)</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Diogo Menezes (MSc @PPGCC/UFMS, 2026–) MLOps Branching Echoes.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Ryan Breda (MSc @PPGCC/UFMS, 2026–) A definir.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Enzo Moraes Pereira (MSc @PPGCC/UFMS, 2025–) Direcionadores e intertemporalidade em decisões arquiteturais de software inteligente.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Rafael Rogado Ribeiro Sobrinho (MSc @PPGCC/UFMS, 2025–) Uma arquitetura de AIOps para otimizar o monitoramento de produto de software.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Jorge Luiz Freitas Costa (MSc @PPGCC/UFMS, 2025–) A definir.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>João Lucas Machado (MSc @PPGCC/UFMS, 2025–) A definir.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Breno José Vergílio (MSc @PPGCC/UFMS, 2024–) Táticas de segurança para arquitetura de software baseada em IA.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lucas Henrique Alves Borth (MSc @PPGCC/UFMS, 2024–) A definir.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Current Students — Master’s (MSc)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Diogo Menezes (MSc @PPGCC/UFMS, 2026–) Branching model as a proxy on Socio-technical aspects.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Breno Ferreira (MSc @PPGCC/UFMS, 2026–) A definir.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Ryan Breda (MSc @PPGCC/UFMS, 2026–) A definir.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Enzo Moraes Pereira (MSc @PPGCC/UFMS, 2025–) Direcionadores e intertemporalidade em decisões arquiteturais de software inteligente.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Rafael Rogado Ribeiro Sobrinho (MSc @PPGCC/UFMS, 2025–) Uma arquitetura de AIOps para otimizar o monitoramento de produto de software.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Jorge Luiz Freitas Costa (MSc @PPGCC/UFMS, 2025–) Efeito rebote no desenvolvimento de código.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>João Lucas Machado (MSc @PPGCC/UFMS, 2025–) Uma Abordagem Shift-Left para Detecção de Riscos Arquiteturais em Sistemas de IA Agêntica.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Lucas Henrique Alves Borth (MSc @PPGCC/UFMS, 2024– | co-supervisor) A definir.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Current Students — Scientific Initiation (IC)</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Gabriel Caitano — Testes de Software com IA: Guia Prático para Novatos na Identificação e Correção de Vieses e Vulnerabilidades.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Matheus Bernard — Um experimento de RAG em modelos de código: uma perspectiva de Engenharia de Software seguro.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Current Students — Scientific Initiation (IC)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Gabriel Caitano — Testes de Software com IA: Guia Prático para Novatos na Identificação e Correção de Vieses e Vulnerabilidades.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Matheus Bernard — Um experimento de RAG em modelos de código: uma perspectiva de Engenharia de Software seguro.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Current Students — Undergraduate (TCC)</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Juliano Necar (@FACOM/UFMS) — Conjunto de heurísticas para data linter em versionamento de bases de dados.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Current Students — Undergraduate (TCC)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Victor Chang (@FACOM/UFMS, 2026–) — Sistemas multiagentes e testes de mutação.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Marcelo Manoel de Lima Filho (@FACOM/UFMS, 2026–) — Sobrevivência de Mutantes em Sistemas Multiagentes.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Juliano Necar (@FACOM/UFMS) — Conjunto de heurísticas para data linter em versionamento de bases de dados.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Alumni — Master’s</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Arthur Ramires Rodrigues Neto Bueno (MSc @PPGCC/UFMS, 2026) — Evolução da co-ocorrência entre code smells e community smells em projetos open-source.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Felipe Soupinski (MSc @PPGCC/UFMS, 2025) — An approach to analyze and mitigate the impacts of Software Ecosystems’ Death.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Edvaldo Roberto Wassouf Junior (MSc @PPGCC/UFMS, 2025) — Framework para melhoria da experiência de desenvolvedores LGBTQIAPN+ em equipes de desenvolvimento de software ágil.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Ana Elisa da Silva Cunha (MSc @PPGCC/UFMS, 2021) — Um modelo baseado em habilidades para formação de profissionais de Developer Relations.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Luiz Alexandre Martins da Costa (MSc @PPGI/UNIRIO, 2019 | co-supervisor) — Uma Abordagem para Gestão de Incidentes em Ecossistemas de Software Proprietário.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Oswald Mesumbe Ekwoge (MSc @ICOMP/UFAM, 2018 | co-supervisor) — Tester Experience: Uma Abordagem para Melhorar a Experiência do Testador em Projetos de Software.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Alumni — Doctorate (PhD)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Gretchen Torres de Macedo (PhD @ICOMP/UFAM, 2020 | co-supervisor) — Abordagem de geração automática de protótipos funcionais de software a partir de protótipos de baixa fidelidade da interface de usuário.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Alumni — Undergraduate (FACOM/UFMS)</div>
-                    <ul class="fa-ul mb-4">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Raphael Arruda de Oliveira — Defining Roles for Developer Relations (DevRel): an Exploratory Study on Practitioners’ opinions.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Rafael Araújo de Lima — Supporting DevRel practitioners in selecting relevant strategies.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Felipe Soupinski — A Developer Relations (DevRel) perspective of Software Ecosystems’ Death.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Fernando Kendy Yahiro — The style of open-source machine learning benchmark projects.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Victor Koji — Exploring sentiments in Gitter discussion threads.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Mateus Ragazzi — Proposing bug severity to newcomers.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Igor Braga Galvan — On applying Ecological Modeling in Software Ecosystem research.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Daniel Massanori — On Investigating the Death of Software Ecosystems: Windows Phone Scenario.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Flavio Augusto — A strategy to support onboarding of novice software testers.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Willian Braga — Code Samples as enablers for Developer Relations in Software Ecosystems.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Alumni — Master’s</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Arthur Ramires Rodrigues Neto Bueno (MSc @PPGCC/UFMS, 2026) — Evolução da co-ocorrência entre code smells e community smells em projetos open-source.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Felipe Soupinski (MSc @PPGCC/UFMS, 2025) — An approach to analyze and mitigate the impacts of Software Ecosystems’ Death.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Edvaldo Roberto Wassouf Junior (MSc @PPGCC/UFMS, 2025) — Framework para melhoria da experiência de desenvolvedores LGBTQIAPN+ em equipes de desenvolvimento de software ágil.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Ana Elisa da Silva Cunha (MSc @PPGCC/UFMS, 2021) — Um modelo baseado em habilidades para formação de profissionais de Developer Relations.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Luiz Alexandre Martins da Costa (MSc @PPGI/UNIRIO, 2019 | co-supervisor) — Uma Abordagem para Gestão de Incidentes em Ecossistemas de Software Proprietário.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Oswald Mesumbe Ekwoge (MSc @ICOMP/UFAM, 2018 | co-supervisor) — Tester Experience: Uma Abordagem para Melhorar a Experiência do Testador em Projetos de Software.</li>
+                            </ul>
+                        </div>
 
-                    <div class="subheading mb-3">Alumni — Undergraduate (ICOMP/UFAM)</div>
-                    <ul class="fa-ul mb-0">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Marcos Hiroshi Saito Bezerra (2018) — Um estudo sobre as barreiras enfrentadas por testadores novatos de apps.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Kleyfferson Lima Silva (2018) — Um estudo sobre a adoção do Scrum por equipes de projetos de larga escala.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Gabriel Gama (2018) — Uma ferramenta para apoiar o uso do Scrum com equipes remotas.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Fabrício José da Silva Lima (2017 | co-supervisor) — Entendendo MSECO a partir de Análise de Dados Técnicos do Stack Overflow.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Schweitzer W. Campelo (2016 | co-supervisor) — Analisando a Relação entre Relatos de Falhas e Ratings em Comentários de Apps na Google Play.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Ludymila Lobo Aguiar Gomes (2015 | co-supervisor) — Identificando nichos em Ecossistemas de Aplicativos Móveis.</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Caio Biase Grana (2015 | co-supervisor) — Realizando um estudo do método UX Curve aplicado a Experiência do Desenvolvedor.</li>
-                    </ul>
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Alumni — Undergraduate (FACOM/UFMS)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Raphael Arruda de Oliveira — Defining Roles for Developer Relations (DevRel): an Exploratory Study on Practitioners’ opinions.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Rafael Araújo de Lima — Supporting DevRel practitioners in selecting relevant strategies.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Felipe Soupinski — A Developer Relations (DevRel) perspective of Software Ecosystems’ Death.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Fernando Kendy Yahiro — The style of open-source machine learning benchmark projects.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Victor Koji — Exploring sentiments in Gitter discussion threads.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Mateus Ragazzi — Proposing bug severity to newcomers.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Igor Braga Galvan — On applying Ecological Modeling in Software Ecosystem research.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Daniel Massanori — On Investigating the Death of Software Ecosystems: Windows Phone Scenario.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Flavio Augusto — A strategy to support onboarding of novice software testers.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Willian Braga — Code Samples as enablers for Developer Relations in Software Ecosystems.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card student-card">
+                            <div class="subheading mb-3">Alumni — Undergraduate (ICOMP/UFAM)</div>
+                            <ul class="fa-ul mb-0">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Marcos Hiroshi Saito Bezerra (2018) — Um estudo sobre as barreiras enfrentadas por testadores novatos de apps.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Kleyfferson Lima Silva (2018) — Um estudo sobre a adoção do Scrum por equipes de projetos de larga escala.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Gabriel Gama (2018) — Uma ferramenta para apoiar o uso do Scrum com equipes remotas.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Fabrício José da Silva Lima (2017 | co-supervisor) — Entendendo MSECO a partir de Análise de Dados Técnicos do Stack Overflow.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Schweitzer W. Campelo (2016 | co-supervisor) — Analisando a Relação entre Relatos de Falhas e Ratings em Comentários de Apps na Google Play.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Ludymila Lobo Aguiar Gomes (2015 | co-supervisor) — Identificando nichos em Ecossistemas de Aplicativos Móveis.</li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Caio Biase Grana (2015 | co-supervisor) — Realizando um estudo do método UX Curve aplicado a Experiência do Desenvolvedor.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -329,165 +445,213 @@
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Awards</h2>
-                    <ul class="fa-ul mb-0">
+                    <div class="card awards-card">
+                    
+                    <div class="subheading mb-2">2026</div>
+                    <ul class="fa-ul mb-4">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2025) Distinguished Reviewer – 21st Brazilian Symposium on Information Systems (SBSI) – Research Track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2025) Distinguished Reviewer – XXXIX Simpósio Brasileiro de Engenharia de Software (SBES) – Education Track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2025) Paraninfo da turma de Engenharia de Software (2025.1) da FACOM, UFMS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2025) 3º lugar – Concurso de Iniciação Científica do XXIV Simpósio Brasileiro de Qualidade de Software (SBQS) – Aluno: Matheus Oliveira. Orientador: Awdren Fontão. Coorientador: Jonathan Andrade.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2025) Patrono da turma de Engenharia de Software (2025.2) da FACOM, UFMS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2024) 3º lugar - Concurso de Iniciação Científica (CTIC) do XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES) - Aluno: Fernando Ayach. Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2024) Distinguished Reviewer - XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES) - Insightful Ideas and Emerging Results Track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2024) Patrono da turma de Engenharia de Software (2024.1) da FACOM, UFMS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2024) Patrono da turma de Engenharia de Software (2024.2) da FACOM, UFMS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Best Short Paper Award: Social Networks during Software Ecosystems’ Death (Pedro Arantes, Felipe Soupinski, Awdren Fontão), SESoS at ICSE.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Menção honrosa - Concurso de Iniciação Científica (CTIC) do XXXVII Simpósio Brasileiro de Engenharia de Software (SBES) - Aluno: Pedro Arantes. Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Distinguished Paper Award: 17th Brazilian Symposium on Software Components, Architectures, and Reuse, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Distinguished Paper Award: 37th Brazilian Symposium on Software Engineering - Insightful Ideas and Emerging Results Track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Distinguished Reviewer - XXII Simpósio Brasileiro de Qualidade de Software (SBQS) - Education Track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2023) Paraninfo da turma de Engenharia de Software (2023.2) da FACOM, UFMS.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2022) 1º lugar - Concurso de Teses e Dissertações (CTDSI) do XVIII SBSI - Mestre: Luiz Alexandre Martins da Costa. Orientadores: Rodrigo dos Santos, Awdren Fontão, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2022) 1º lugar - Concurso de Trabalhos de Conclusão de Curso em Sistemas de Informação (CTCCSI) do XVIII SBSI 2022 - Candidato: Raphael Arruda de Oliveira. Orientadores: Awdren Fontão, Bruno Cafeo, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2022) 1º lugar - Concurso de Teses e Dissertações (CTDQS) do XXI Simpósio Brasileiro de Qualidade de Software (SBQS 2022) - Mestre: Luiz Costa / Orientadores: Rodrigo Santos e Awdren Fontão, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2022) 3º lugar - Concurso de Iniciação Científica (CTIC) do XXXVI Simpósio Brasileiro de Engenharia de Software (SBES) - Felipe Soupinski / Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2022) 1º lugar - Concurso de Dissertações de Mestrado do Workshop Anual do MPS (WAMPS 2022) - Mestre: Luiz Costa / Orientadores: Rodrigo Santos e Awdren Fontão, SOFTEX.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2021) Outstanding Reviewer - 35th Brazilian Symposium on Software Engineering (SBES 2021) - Education track, Sociedade Brasileira de Computação.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2020) 1
-                            <sup>rd</sup>
-                            Place - Best PhD Thesis in Software Enginering in Brazil, Brazilian Computer Society.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2020) 1
-                            <sup>rd</sup>
-                            Place - Best PhD Thesis in Information Sysems in Brazil, Brazilian Computer Society.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2020) 3
-                            <sup>rd</sup>
-                            Place - Best PhD Thesis in Software Quality in Brazil,, Brazilian Computer Society.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2020) Best Paper Nominations of 15th IEEE/ACM International Conference on Global Software Engineering (ICGSE 2020), IEEE.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2019) Tribute for the Defense of the 50th Doctoral Thesis of the PPGI of ICOMP/UFAM
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2018) Recognition for productivity in the 2017-2018 biennium, Institute of Computing - Federal University of Amazonas
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2017) 3
-                            <sup>rd</sup>
-                            Place - Best dissertations in computing in Brazil, Brazilian Computer Society.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2017) 2
-                            <sup>nd</sup>
-                            Place - Best dissertations in Software Quality in Brazil, Brazilian Symposium on Software Quality.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2017) Among the 5 best articles of "Research Track", Brazilian Symposium on Software Engineering.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2016) Best Paper Award (PHD, Poster Category): "GoDev-DX: Developers? Governance in Mobile Software Ecosystems from Developer Experience (DX)", The III Latin-American School on Software Engineering (ELA-ES)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2016) Best Paper Award: Explorando a Personalidade do Desenvolvedor em Ecossistemas de Software Móvel, I Workshop sobre Aspectos Sociais, Humanos e Econômicos de Software (WASHES)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2015) Best Paper Award: Avaliando a Experiência de Desenvolvedores (DX) no Processo de Ensino de Desenvolvimento de Aplicações Móveis, Conferência Ibero-Americana WWW/Internet
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2013) Nokia Developer Certified Trainer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2012) Nokia Developer Champion, Nokia.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            (2011) Nokia Developer Champion, Nokia.
+                            Distinguished Reviewer Award - International Conference on Software Engineering - Software Engineering in Practice Track, ACM, SIGSOFT, IEEE, TCSE.
                         </li>
                     </ul>
+                    <div class="subheading mb-2">2025</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Reviewer - XXXIX Simpósio Brasileiro de Engenharia de Software (SBES) - Education Track, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Reviewer - 21st Brazilian Symposium on Information Systems - Research Track, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Paraninfo da turma de Engenharia de Software (2025.1) da FACOM, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Patrono da turma de Engenharia de Software (2025.2) da FACOM, Universidade Federal de Mato Grosso do Sul.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3º lugar - Concurso de Iniciação Científica do XXIV Simpósio Brasileiro de Qualidade de Software (SBQS) - Aluno: Matheus Oliveira. Orientador: Awdren Fontão. Coorientador: Jonathan Andrade, Sociedade Brasileira de Computação.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2024</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Reviewer - XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES) - Insightful Ideas and Emerging Results Track, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3º lugar - Concurso de Iniciação Científica (CTIC) do XXXVIII Simpósio Brasileiro de Engenharia de Software (SBES) - Aluno: Fernando Ayach. Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Patrono da turma de Engenharia de Software (2024.2) da FACOM, UFMS.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Patrono da turma de Engenharia de Software (2024.1) da FACOM, UFMS.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2023</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Paper Award: 17th Brazilian Symposium on Software Components, Architectures, and Reuse, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Menção honrosa - Concurso de Iniciação Científica (CTIC) do XXXVII Simpósio Brasileiro de Engenharia de Software (SBES) - Aluno: Pedro Arantes. Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Short Paper Award: Social Networks during Software Ecosystems Death (Pedro Arantes, Felipe Soupinski, Awdren Fontão), SESoS at ICSE.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Paraninfo da turma de Engenharia de Software (2023.2) da FACOM, UFMS.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Reviewer - XXII Simpósio Brasileiro de Qualidade de Software (SBQS) - Education Track, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Distinguished Paper Award: 37th Brazilian Symposium on Software Engineering -  Insightful Ideas and Emerging Results Track, Sociedade Brasileira de Computação.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2022</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3º lugar - Concurso de Iniciação Científica (CTIC) do XXXVI Simpósio Brasileiro de Engenharia de Software (SBES) - Felipe Soupinski / Orientador: Awdren Fontão, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Dissertações de Mestrado do Workshop Anual do MPS (WAMPS 2022) - Mestre: Luiz Costa / Orientadores: Rodrigo Santos e Awdren Fontão, SOFTEX.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Teses e Dissertações (CTDQS) do XXI Simpósio Brasileiro de Qualidade de Software (SBQS 2022) - Mestre: Luiz Costa / Orientadores: Rodrigo Santos e Awdren Fontão, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Teses e Dissertações (CTDSI) do XVIII SBSI - Mestre: Luiz Alexandre Martins da Costa. Orientadores: Rodrigo dos Santos, Awdren Fontão, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Trabalhos de Conclusão de Curso em Sistemas de Informação (CTCCSI) do XVIII SBSI 2022 - Candidato: Raphael Arruda de Oliveira. Orientadores: Awdren Fontão, Bruno Cafeo, Sociedade Brasileira de Computação.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2021</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Outstanding Reviewer - 35th Brazilian Symposium on Software Engineering (SBES 2021) - Education track, Sociedade Brasileira de Computação.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2020</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Teses e Dissertações (CTDES) do XXXIV Simpósio Brasileiro de Engenharia de Software (SBES 2020) - Orientadores: Arilo Dias Neto e Rodrigo Santos, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Paper Nominations of 15th IEEE/ACM International Conference on Global Software Engineering (ICGSE 2020), IEEE.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3º lugar - Concurso de Teses e Dissertações (CTDQS) do XIX Simpósio Brasileiro de Qualidade de Software (SBQS 2020) - Orientadores: Arilo Dias Neto e Rodrigo Santos, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1º lugar - Concurso de Teses e Dissertações (CTDSI) do XVI Simpósio Brasileiro de Sistemas de Informação (SBSI 2020) - Orientadores: Arilo Dias Neto e Rodrigo Santos, Sociedade Brasileira de Computação.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2019</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Homenagem pela Defesa da Quinquagésima Tese de Doutorado do PPGI do ICOMP/UFAM, Instituto de Computação - Universidade Federal do Amazonas.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2018</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Reconhecimento pela produtividade no biênio 2017-2018, Instituto de Computação - Universidade Federal do Amazonas.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2017</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3º lugar - Melhores dissertações em Computação do Brasil, Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2º lugar - Melhores dissertações em Qualidade de Software do Brasil, Simpósio Brasileiro de Qualidade de Software - Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Entre os 5 melhores artigos da "Research Track", Simpósio Brasileiro em Engenharia de Software.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2016</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Paper Award (PHD, Poster Category): "GoDev-DX: Developers Governance in Mobile Software Ecosystems from Developer Experience (DX)", The III Latin-American School on Software Engineering (ELA-ES) - Sociedade Brasileira de Computação.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Paper Award: Explorando a Personalidade do Desenvolvedor em Ecossistemas de Software Móvel, I Workshop sobre Aspectos Sociais, Humanos e Econômicos de Software (WASHES).
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2015</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Best Paper Award: Avaliando a Experiência de Desenvolvedores (DX) no Processo de Ensino de Desenvolvimento de Aplicações Móveis, Conferência Ibero-Americana WWW/Internet.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2013</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Nokia Developer Certified Trainer, Nokia.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2012</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Nokia Developer Champion, Nokia.
+                        </li>
+                    </ul>
+                    <div class="subheading mb-2">2011</div>
+                    <ul class="fa-ul mb-4">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Nokia Developer Champion, Nokia.
+                        </li>
+                    </ul>
+                    
+                    </div>
                 </div>
             </section>
-        </div>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; <span id="footerYear"></span> Awdren Fontão. Built with care in Campo Grande, Brazil.</p>
+                <a href="#page-top" class="back-to-top">Back to top &uarr;</a>
+            </div>
+        </footer>
+        
         <!-- Bootstrap 4 JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
